@@ -342,6 +342,9 @@ a {
   background-color: #c4c4c4;
   height: 70vh;
   margin-top: 4rem; }
+  @media (min-width: 75em) {
+    .footer {
+      height: 50vh; } }
   .footer__items {
     padding: 4rem 6.7rem; }
   .footer__quick-links {

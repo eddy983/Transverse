@@ -3,6 +3,10 @@
   height: 70vh;
   margin-top: 4rem;
 
+  @include respond(desktop) { 
+    height: 50vh; 
+  }
+
   &__items {
     padding: 4rem 6.7rem;
   }

@@ -1,0 +1,48 @@
+.header{
+  height: 70vh;
+  background-image: url(../../assets/img/BG-image.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &--news {
+      margin-top: 1.2rem;
+
+      &__text {
+        display: block;
+      }
+
+      &__author {
+        color: #38556e !important;
+
+        &:hover {
+          color: #6295BF !important;
+        }
+      }
+    }
+  }
+
+  &__news {
+    margin-top: 1.2rem;
+    position: relative;
+
+    &--image {
+      border-radius: 4px;
+      height: 40rem;
+      left: 11.6rem;
+      position: absolute;
+      top: 0;
+      width: 75.4rem;
+    }
+  }
+
+}  

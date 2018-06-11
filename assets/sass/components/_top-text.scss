@@ -1,0 +1,20 @@
+.top-text {
+  position: relative;
+}
+
+#myBtn {
+  background-color: $white-color;
+  border: none;
+  color: $red-color;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 2rem;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  right: 46%;  
+}
+
+#myBtn:hover {
+  color: $blue-color;
+}

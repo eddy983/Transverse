@@ -1,0 +1,83 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+} 
+
+.primary-heading {
+  font-size: 6.4rem;
+  font-style: italic;
+  letter-spacing: .1rem;
+
+  &--news {
+    font-size: 3.1rem;
+    font-weight: bold;
+  }
+
+  &--news__sub {
+    font-size: 1.4rem;
+    color: rgba($black-color, .5);
+  }
+}
+
+
+
+.primary-heading--sub {
+  font-size: 3.2rem;
+  letter-spacing: 0.4rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-bold {
+    font-weight: 600;
+  }
+}
+
+.news-title {
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.pagination-font {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer-title {
+  color: rgba($black-color, .5);
+  font-size: 1.8rem;
+}
+
+.footer-sub {
+  color: rgba($black-color, .4);
+  font-size: 1.6rem;
+}
+
+.footer-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.publisher-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.paragraph-date {
+  color: rgba($black-color, .5);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+

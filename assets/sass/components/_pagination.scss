@@ -1,0 +1,46 @@
+.pagination {
+  display: inline-block;
+  padding: 8rem 0 4rem 0;
+
+
+  &__item {
+    color: $red-color;
+    float: left;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+
+    &:active,
+    &:hover,
+    &::selection, 
+    {
+      background-color: $dark-blue-color;
+      color: $white-color;
+      border-radius: .8rem;
+    }
+
+    &--word {
+      color: $red-color;
+      margin: 1rem 1.2rem;
+      padding: 0;
+      
+
+      &:hover {
+        background-color: $white-color;
+        color: $dark-blue-color;
+      }
+    }
+  }
+
+
+}
+
+// .pagination a.active {
+//   background-color: #4caf50;
+//   color: white;
+//   border-radius: 5px;
+// }
+
+// .pagination a:hover:not(.active) {
+//   background-color: #ddd;
+//   border-radius: 5px;
+// }

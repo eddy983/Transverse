@@ -1,0 +1,8 @@
+.about__card {
+  margin-top: $card-m-top;
+ @include card;
+
+  &--last {
+    margin-bottom: 4rem;
+  }
+}

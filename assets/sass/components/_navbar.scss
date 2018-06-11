@@ -1,0 +1,99 @@
+.nav-bar {
+  overflow: hidden;
+  background-color: $nav-bg-color;
+
+  &__search-container {
+    float: right;
+    padding-bottom: 0.8rem;
+
+    &--button {
+      background: $dark-blue-color;
+      border: 0.05rem solid $dark-blue-color;
+      border-bottom-right-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+      color: $white-color;
+      cursor: pointer;
+      float: right;
+      font-size: $default-font;
+      margin: 0.8rem 3rem 0 0;
+      padding: 0.4rem 1rem;
+
+      &:hover {
+        background: $blue-color;
+      }
+    }
+
+    &--input {
+      padding: 0.9rem;
+      margin-top: 0.8rem;
+      font-size: $default-font;
+      border: none;
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+    }
+  }
+
+  &__item {
+    border-bottom: 0.4rem solid transparent;
+    display: block;
+    float: right;
+    font-size: $default-font;
+    font-weight: 600;
+    color: $black-color;
+    text-align: center;
+    text-decoration: none;
+    padding: $nav-padding;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &::after {
+      color: $blue-color;
+      text-decoration: none;
+      border-bottom: $hover-line;
+      cursor: pointer;
+    }
+  }
+}
+
+input[type="text"] {
+  border: none;
+  font-size: $default-font;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 0.4rem;
+}
+
+.dropdown {
+  &-nav-link {
+    color: $black-color;
+    font-size: $default-font;
+    font-weight: 600;
+    float: right;
+    text-decoration: none;
+    padding: $nav-padding;
+
+    &:hover,
+    &::selection {
+      color: $blue-color;
+      border-bottom: $hover-line;
+    }
+  }
+
+  &-menu {
+    background-color: $nav-bg-color;
+  }
+
+  &-item {
+    background-color: $nav-bg-color;
+    font-size: $default-font;
+
+    &:hover {
+      color: $blue-color;
+    }
+  }
+}
+
+a {
+  text-decoration: none !important;
+}

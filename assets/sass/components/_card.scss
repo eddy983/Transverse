@@ -4,15 +4,33 @@
     border: 1.5px solid #c4c4c4;
     border-radius: 2px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-    float: left;
+    //float: left;
     height: 41.9rem;
     margin-top: 4rem;
     width: 100%;
+    perspective: 150rem;
+    
     
 
     &--2 {
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.65);
       height: 34rem;
+      transition: all .5s;
+
+      &--A1 {
+        animation: rotate 3s ease 2s backwards;
+      }
+
+      &--A3 {
+        animation: rotate 3s ease 4s backwards;
+      }
+
+      
+
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
 
       @include respond(desktop) { 
@@ -21,6 +39,14 @@
 
       &__low {
         margin: 6rem 0 8rem 0;
+
+        &--A2 {
+          animation: rotate 3s ease 3s backwards;
+        }
+
+        &--A4 {
+          animation: rotate 3s ease 5s backwards;
+        }
       }
     }
 
@@ -56,6 +82,7 @@
     margin: 1.6rem .8rem 0 .8rem;
 
     &--2 {
+      color: #000 !important;
       font-size: 3rem;
       font-weight: 400;
       margin: 5.6rem .8rem 0 .8rem;
@@ -69,7 +96,11 @@
 
     &--read {
       color: $red-color;
-      font-weight: bold
+      font-weight: bold;
+
+      &:hover {
+        color: $blue-color;
+      }
     }
   }
 
@@ -78,8 +109,20 @@
   &__info {
     font-size: 1.1rem;
     font-kerning: .4rem;
-    margin: .8rem .8rem 0 .8rem;
+    margin: .8rem .8rem 0 .4rem;
     color: rgba(0, 0, 0, 50%);
+
+    &--f {
+      color: $black-color;
+      font-weight: 500;
+    }
+
+    &--p {
+      margin: .8rem .2rem 0 .4rem;
+      &:hover {
+        color: $blue-color;
+      }
+    }
   }
 
 }

@@ -4,3 +4,6 @@
 [0531/040118.884:ERROR:process_info.cc(359)] UncheckedAllocate
 [0531/040118.974:ERROR:process_reader_win.cc(242)] ReadMemory at 0x74839222 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0531/040118.975:ERROR:crash_report_exception_handler.cc(116)] WriteEverything failed
+[0616/230343.432:ERROR:process_info.cc(359)] UncheckedAllocate
+[0616/230639.143:ERROR:process_info.cc(359)] UncheckedAllocate
+[0618/113432.200:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: The server name or address could not be resolved (0x2ee7)

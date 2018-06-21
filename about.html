@@ -21,49 +21,51 @@
 
   <header class="header">
     <!-- Navigation Bar -->
-    <div class="nav-bar">
-      <div class="nav-bar__search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search" class="nav-bar__search-container--input">
-          <button type="submit" class="nav-bar__search-container--button">
-            <i class="fa fa-search"></i>
+    <div class="navbar">
+      <div class="navbar__items">
+        <div class="navbar__search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" class="navbar__search-container--input">
+            <button type="submit" class="navbar__search-container--button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn dropdown-nav-link" onclick="myFunction3()">About
+            <i class="fa fa-caret-down"></i>
           </button>
-        </form>
+          <div class="dropdown-content dropdown-menu" id="myDropdown3">
+            <a href="about.html" class="dropdown-item">About us</a>
+            <a href="about.html" class="dropdown-item">Contact us</a>
+            <a href="about.html" class="dropdown-item">Submissions</a>
+            <a href="privacy-policy.html" class="dropdown-item">Privacy policy</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn dropdown-nav-link" onclick="myFunction2()">Special
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content dropdown-menu" id="myDropdown2">
+            <a href="features.html" class="dropdown-item">Features</a>
+            <a href="interviews.html" class="dropdown-item">Interviews</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn dropdown-nav-link" onclick="myFunction()">Columns
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content dropdown-menu" id="myDropdown">
+            <a href="newsquake.html" class="dropdown-item">NewsQuake</a>
+            <a href="deejays-thoughts.html" class="dropdown-item">A deejays’ thought</a>
+            <a href="dear-millenial.html" class="dropdown-item">Dear Millennials</a>
+            <a href="story-for-the-gods.html" class="dropdown-item">Story for the gods</a>
+          </div>
+        </div>
+        <a href="opinions.html" class="navbar__item">Opinions</a>
+        <a href="news.html" class="navbar__item">News</a>
+        <a href="index.html" class="navbar__item">Home</a>
       </div>
-
-      <a class="dropdown">
-        <a class="dropdown-nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          About
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div>
-      </a>
-      <a class="dropdown">
-        <a class="dropdown-nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          Special
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div>
-      </a>
-      <a class="dropdown">
-        <a class="dropdown-nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          Columns
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div>
-      </a>
-      <a href="#" class="nav-bar__item">Opinion</a>
-      <a href="#" class="nav-bar__item">News</a>
-      <a href="#" class="nav-bar__item">Home</a>
     </div>
 
     <div class="header__text-box">
@@ -95,10 +97,12 @@
       <div class="about__card">
         <h3 class="about-title">Contact us</h3>
         <p class="u-margin-paragraph-big paragraph">
-          Email:<span class="paragraph-bold"> editor@thetransverse.com</span>
+          Email:
+          <span class="paragraph-bold"> editor@thetransverse.com</span>
         </p>
         <p class="u-margin-paragraph-big paragraph">
-          Phone No:<span class="paragraph-bold"> +234 (0) 802 930 8237</span>
+          Phone No:
+          <span class="paragraph-bold"> +234 (0) 802 930 8237</span>
         </p>
         <p class="u-margin-paragraph-big paragraph">
           Social media handles:
@@ -132,7 +136,7 @@
             <ul class="footer__map__list">
               <li class="u-margin-link footer-sub">News</li>
               <li class="u-margin-link footer-link">
-                <a href="#" class="footer__map__item">Entertainment</a>
+                <a href="" class="footer__map__item">Entertainment</a>
               </li>
               <li class="u-margin-link footer-link">
                 <a href="#" class="footer__map__item">Sports</a>

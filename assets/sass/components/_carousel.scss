@@ -1,0 +1,29 @@
+.carousel-control-next-icon {
+  background-image: url(../../../assets/img/next.svg);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../../assets/img/back.svg);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 2%;
+}
+
+.carousel-control-next {
+  right: 2.1rem;
+}
+
+.carousel-control-prev {
+  left: 2.1rem;
+}
+
+.carousel-indicators li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 3.3rem;
+  width: 3.3rem;
+}

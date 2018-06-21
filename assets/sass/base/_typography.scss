@@ -4,6 +4,7 @@ body {
 } 
 
 .primary-heading {
+  animation: moveInLeft 2s ease-out;
   display: block;
   font-size: 6.4rem;
   font-style: italic;
@@ -12,11 +13,13 @@ body {
   &--news {
     font-size: 3.1rem;
     font-weight: bold;
+   
   }
 
   &--news__sub {
     font-size: 1.4rem;
     color: rgba($black-color, .5);
+    
   }
 }
 
@@ -26,6 +29,7 @@ body {
   display: block;
   font-size: 3.2rem;
   letter-spacing: 0.4rem;
+  animation: moveInRight 2s ease-out;
 }
 
 .paragraph {

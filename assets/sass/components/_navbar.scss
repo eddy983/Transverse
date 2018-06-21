@@ -1,6 +1,11 @@
-.nav-bar {
-  overflow: hidden;
+.navbar {
   background-color: $nav-bg-color;
+  padding: 0;
+
+  &__items {
+    float: right;
+    width: 100%;
+  }
 
   &__search-container {
     float: right;
@@ -34,7 +39,7 @@
   }
 
   &__item {
-    border-bottom: 0.4rem solid transparent;
+    border-bottom: $normal-line;
     display: block;
     float: right;
     font-size: $default-font;
@@ -65,16 +70,22 @@ input[type="text"] {
 }
 
 .dropdown {
+  float: right;
   &-nav-link {
     color: $black-color;
+    background-color: transparent;
+    border: none;
+    border-bottom: $normal-line;
     font-size: $default-font;
     font-weight: 600;
-    float: right;
+    //float: right;
     text-decoration: none;
+    outline: none;
     padding: $nav-padding;
 
     &:hover,
-    &::selection {
+    &::selection,
+    &:focus {
       color: $blue-color;
       border-bottom: $hover-line;
     }
@@ -82,20 +93,39 @@ input[type="text"] {
 
   &-menu {
     background-color: $nav-bg-color;
-
   }
 
   &-item {
     background-color: $nav-bg-color;
+    //display: none;
     font-size: $default-font;
+    //position: absolute;
+    min-width: 16rem;
+    //box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: block;
+    text-align: left;
+    padding: $nav-padding;
+    border-bottom: $normal-line;
 
     &:hover {
       color: $blue-color;
+      border-bottom: $normal-line;
     }
-
   }
 }
 
 a {
   text-decoration: none !important;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  color: #6295bf;
+  outline: 0;
+}
+
+
+.show {
+  display: block;
 }

@@ -1,11 +1,11 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
-  }
+    transform: translateX(-10rem) ;
+  } 
 
   80% {
-    transform: translateX(1rem);
+    transform: translateX(1rem)
   }
 
   100% {
@@ -21,11 +21,35 @@
   }
 
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(-1rem)
   }
 
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes hideThis {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(360deg);
   }
 }

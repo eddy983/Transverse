@@ -12,10 +12,26 @@
 
 .carousel-control-next {
   right: 2.1rem;
+
+  @include respond(big-desktop) { 
+    right: 38.1rem;
+  }
+
+  @include respond(desktop) { 
+    right: 2.1rem; 
+  }
 }
 
 .carousel-control-prev {
   left: 2.1rem;
+
+  @include respond(big-desktop) { 
+    left: 38.1rem;
+  }
+
+  @include respond(desktop) { 
+    left: 2.1rem; 
+  }
 }
 
 .carousel-indicators li {

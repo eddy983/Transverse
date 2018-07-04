@@ -3,29 +3,99 @@
   height: 70vh;
   margin-top: 4rem;
 
+  @include respond(big-desktop) { 
+    height: 38vh;  
+  }
+
   @include respond(desktop) { 
     height: 50vh;  
   }
 
+  // @include respond(tab-land) {
+  //   height: 43vh;
+  // }
+
+  @include respond(tab-land2) {
+    height: 27vh;
+  }
+
+  @include respond(tab-port2) {
+    height: 39vh;
+  }
+
+  @include respond(tab-port) {
+    height: 32vh;
+  }
+
+  @include respond(tab-port3) {
+    height: 34vh;
+  }
+
+  @include respond(l-phone) {
+    height: 104vh;
+  }
+
+  @include respond(phone) {
+    height: 73vh;
+  }
+
+  @include respond(phone2) {
+    height: 95vh;
+  }
+
+  @include respond(s-phone2) {
+    height: 101vh;
+  }
+
+  @include respond(sx-phone) {
+    height: 128vh;
+  }
+
+  
+
   &__items {
     padding: 4rem 6.7rem;
+
+    @include respond(big-desktop) { 
+      padding: 4rem 44.7rem; 
+    }
+
+    @include respond(desktop) { 
+      padding: 4rem 6.7rem;
+    }
+
+    @include respond(l-phone) { 
+      padding: 2rem 3.7rem;
+    }
   }
 
   &__quick-links {
     float: left;
     width: 61.2rem;
+
+    @include respond(l-phone) { 
+      width: 100%;
+    }
   }
 
   &__subcribe {
     float: right;
     width: 34.2rem;
+
+    @include respond(l-phone) { 
+      width: 100%;
+    }
   }
 
   &__line {
     border-bottom: $line;
 
     &--2 {
-      margin-top: 216px;
+      margin-top: 21.6rem;
+
+      @include respond(l-phone) { 
+        margin-top: 90.6rem;
+      }
     }
   }
 
@@ -36,6 +106,11 @@
       float: left;
       list-style-type: none;
       width: 15.3rem;
+
+      @include respond(l-phone) { 
+        width: 50%;
+        text-align: left;
+      }
     }
 
     &__item {
@@ -54,25 +129,66 @@
     outline: 0;
     padding: 1rem;
     width: 100%;
+
+    @include respond(l-phone) { 
+      font-size: 2.6rem;
+      margin-top: 7rem;
+      width: 50%;
+    }
+
+    &__input{
+      @include respond(l-phone) { 
+        margin-top: 1rem;
+        width: 80%;
+      }
+    }
   }
 
   &__social-media {
     margin-top: 4.2rem;
 
+    @include respond(l-phone) { 
+      float: right;
+      margin-top: -18.8rem;
+      width: 50%;
+    }
+
+    @include respond(phone) { 
+      margin-top: -22.8rem;
+    }
+
+    @include respond(phone2) { 
+      margin-top: -17.8rem;
+    }
+    @include respond(m-phone2) { 
+      margin-top: -20.8rem;
+    }
+    @include respond(sx-phone) { 
+      margin-top: -19.8rem;
+    }
+
     &__icon {
       height: 3.2rem;
       margin-right: 2.8rem;
+
+      @include respond(l-phone) { 
+        height: 5.2rem;
+      }
     }
   }
 
   &__copyright {
     display: inline-flex;
-    margin-top: 4.2rem;
+    margin-top: 3rem;
 
     &__text {
       font-size: 1.2rem;
       font-weight: bold;
       margin-left: 0.4rem;
+
+      @include respond(l-phone) { 
+        font-size: 2.2rem;
+      }
 
       &:not(:last-child) {
         margin-right: 1.2rem;
@@ -80,9 +196,13 @@
     }
 
     &__icon {
-      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: bold;
-      margin-top: 2px;
+      margin-top: .2rem;
+
+      @include respond(l-phone) { 
+        font-size: 2.5rem;
+      }
     }
   }
 }

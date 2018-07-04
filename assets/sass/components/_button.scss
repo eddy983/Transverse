@@ -14,6 +14,11 @@
   &__subcribe {
     margin-top: 0.8rem;
     padding: 0.8rem 4rem;
+
+    @include respond(l-phone) { 
+      display: block;
+      font-size: 2.6rem;
+    }
   }
 
   &__reply {

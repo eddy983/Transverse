@@ -11,18 +11,20 @@
     perspective: 150rem;
     
     
+    
 
     &--2 {
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.65);
       height: 34rem;
       transition: all .5s;
+      display: none;
 
       &--A1 {
-        animation: rotate 3s ease 2s backwards;
+        // animation: rotate 3s ease 2s backwards;
       }
 
       &--A3 {
-        animation: rotate 3s ease 4s backwards;
+        // animation: rotate 3s ease 4s backwards;
       }
 
       
@@ -40,12 +42,8 @@
       &__low {
         margin: 6rem 0 8rem 0;
 
-        &--A2 {
-          animation: rotate 3s ease 3s backwards;
-        }
-
-        &--A4 {
-          animation: rotate 3s ease 5s backwards;
+        @include respond(l-phone) { 
+          margin: 4rem 0 4rem 0;
         }
       }
     }

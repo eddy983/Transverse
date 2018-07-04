@@ -23,6 +23,14 @@
       margin: 0.8rem 3rem 0 0;
       padding: 0.4rem 1rem;
 
+      @include respond(big-desktop) { 
+        font-size: $default-big-font;
+      }
+
+      @include respond(desktop) { 
+        font-size: $default-font; 
+      }
+
       &:hover {
         background: $blue-color;
       }
@@ -35,6 +43,14 @@
       border: none;
       border-top-left-radius: 0.8rem;
       border-bottom-left-radius: 0.8rem;
+
+      @include respond(big-desktop) { 
+        font-size: $default-big-font;
+      }
+
+      @include respond(desktop) { 
+        font-size: $default-font; 
+      }
     }
   }
 
@@ -48,6 +64,14 @@
     text-align: center;
     text-decoration: none;
     padding: $nav-padding;
+
+    @include respond(big-desktop) { 
+      font-size: $default-big-font;
+    }
+
+    @include respond(desktop) { 
+      font-size: $default-font; 
+    }
 
     &:hover,
     &:focus,
@@ -67,6 +91,14 @@ input[type="text"] {
   margin-top: 0.8rem;
   outline: 0;
   padding: 0.4rem;
+
+  @include respond(big-desktop) { 
+    font-size: $default-big-font;
+  }
+
+  @include respond(desktop) { 
+    font-size: $default-font; 
+    }
 }
 
 .dropdown {
@@ -82,6 +114,14 @@ input[type="text"] {
     text-decoration: none;
     outline: none;
     padding: $nav-padding;
+
+    @include respond(big-desktop) { 
+      font-size: $default-big-font;
+    }
+
+    @include respond(desktop) { 
+      font-size: $default-font; 
+    }
 
     &:hover,
     &::selection,
@@ -106,6 +146,14 @@ input[type="text"] {
     text-align: left;
     padding: $nav-padding;
     border-bottom: $normal-line;
+
+    @include respond(big-desktop) { 
+      font-size: $default-big-font;
+    }
+
+    @include respond(desktop) { 
+    font-size: $default-font; 
+    }
 
     &:hover {
       color: $blue-color;

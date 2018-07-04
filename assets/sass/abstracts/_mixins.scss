@@ -45,26 +45,56 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint == sx-phone {
     @media (max-width: 20em) { @content }; // 320px in em 
   }
+  @if $breakpoint == s-phone2 {
+    @media (max-width: 23.4375em) { @content }; // 375px in em 
+  }
   @if $breakpoint == s-phone {
     @media (max-width: 25em) { @content }; // 400px in em 
+  }
+  @if $breakpoint == m-phone2 {
+    @media (max-width: 26.5em) { @content }; // 424px in em
   }
   @if $breakpoint == m-phone {
     @media (max-width: 31.25em) { @content }; // 500px in em
   }
+  @if $breakpoint == phone2 {
+    @media (max-width: 34.5625em) { @content }; // 553px in em
+  }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content }; // 600px in em
+  }
+  @if $breakpoint == l-phone2 {
+    @media (max-width: 40.75em) { @content }; // 652px in em
+  }
+  @if $breakpoint == l-phone {
+    @media (max-width: 41.125em) { @content }; // 658px in em
+  }
+  @if $breakpoint == tab {
+    @media (max-width: 44.6875em) { @content }; // 715px in em
+  }
+  @if $breakpoint == tab-port3 {
+    @media (max-width: 50em) { @content }; // 800px in em
   }
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) { @content }; // 900px in em
   }
+  @if $breakpoint == tab-port2 {
+    @media (max-width: 62.25em) { @content }; // 996px in em
+  }
+  @if $breakpoint == tab-land2 {
+    @media (max-width: 62.25em) { @content }; // 1024px in em
+  }
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) { @content }; // 1200px in em
+    @media (max-width: 80em) { @content }; // 1280px in em
+  }
+  @if $breakpoint == desktop2 {
+    @media (max-width: 90em) { @content }; // 1366px in em
   }
   @if $breakpoint == desktop {
-    @media (min-width: 75em) { @content }; // 1200px in em
+    @media (max-width: 90em) { @content }; // 1440px in em
   }
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) { @content }; // 1800px in em
+    @media (max-width: 160em) { @content }; // 2560px in em
   }
 }
 

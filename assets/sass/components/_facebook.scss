@@ -1,0 +1,10 @@
+.facebook {
+  &__board {
+    background-image: url(../../assets/img/Card-image2.jpg);
+    border-radius: 0.7rem;
+    height: 16rem;
+    background-size: 100% 100%;
+    object-fit: contain;
+    width: 28rem;
+  }
+}

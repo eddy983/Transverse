@@ -90,8 +90,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint == tab-land {
     @media (max-width: 80em) { @content }; // 1280px in em
   }
+  @if $breakpoint == desktop3 {
+    @media (max-width: 83.1875em) { @content }; // 1331px in em
+  }
   @if $breakpoint == desktop2 {
-    @media (max-width: 90em) { @content }; // 1366px in em
+    @media (max-width: 85.375em) { @content }; // 1366px in em
+  }
+  @if $breakpoint == desktop-m {
+    @media (max-width: 87.8125em) { @content }; // 1405px in em
   }
   @if $breakpoint == desktop {
     @media (max-width: 90em) { @content }; // 1440px in em

@@ -17,6 +17,10 @@ body {
   @include respond(desktop) { 
     font-size: 8.4rem;  
   }
+
+  @include respond(desktop-m) { 
+    font-size: 7.4rem;  
+  }
   
   @include respond(l-phone) { 
     font-size: 6.4rem;  

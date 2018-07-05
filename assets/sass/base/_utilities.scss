@@ -8,6 +8,14 @@
 
 .u-margin-paragraph-big { margin-top: 2rem; }
 
+.u-margin-paragraph-big-comment { 
+  margin-top: 2rem;
+
+  @include respond(m-phone2) { 
+    margin-top: 0rem;
+  }
+}
+
 .u-margin-paragraph-small { margin-bottom: .5rem; }
 
 .u-display-block { display: block; }

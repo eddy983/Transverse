@@ -2,6 +2,10 @@
   background-color: $nav-bg-color;
   padding: 0;
 
+  @include respond(tab-land2) { 
+    display: none;
+  }
+
   &__items {
     float: right;
     width: 100%;

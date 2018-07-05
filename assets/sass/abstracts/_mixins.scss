@@ -42,6 +42,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == sxx-phone {
+    @media (max-width: 18.25em) { @content }; // 292px in em 
+  }
   @if $breakpoint == sx-phone {
     @media (max-width: 20em) { @content }; // 320px in em 
   }
@@ -59,7 +62,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   @if $breakpoint == phone2 {
     @media (max-width: 34.5625em) { @content }; // 553px in em
-  }
+  } 
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content }; // 600px in em
   }

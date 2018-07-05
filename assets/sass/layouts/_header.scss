@@ -53,6 +53,24 @@
     position: relative;
     width: 100%;
 
+    @include respond(tab-land) { 
+      margin: 9rem auto 0 auto;
+    }
+
+    @include respond(tab-port2) { 
+      margin: 3rem auto 0 auto;
+    }
+
+    @include respond(tab-port) { 
+      margin: 16rem auto 0 auto;
+    }
+
+    @include respond(tab) { 
+      margin: 2rem auto 0 auto;
+    }
+
+
+
     &--image {
       border-radius: 4px;
       height: 44rem;
@@ -61,6 +79,40 @@
       top: 50%;
       transform: translateX(-50%);
       width: 82.4rem;
+
+      @include respond(desktop) { 
+        height: 40rem;
+        width: 75.4rem;
+      }
+
+      @include respond(phone) { 
+        height: 36rem;
+        width: 55.4rem;
+      }
+
+      @include respond(phone2) { 
+        height: 28rem;
+        width: 54.4rem;
+      }
+
+      @include respond(m-phone2) { 
+        width: 48.4rem;
+      }
+
+      @include respond(s-phone2) { 
+        height: 24rem;
+        width: 40.4rem;
+      }
+
+      @include respond(sx-phone) { 
+        height: 20rem;
+        width: 32.4rem; 
+      }
+
+      @include respond(sx-phone) { 
+        height: 15rem;
+        width: 26.4rem; 
+      }
     }
   }
 

@@ -31,7 +31,11 @@
 
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.1); 
+
+        @include respond(tab-land2) { 
+          transform: none; 
+        }
       }
 
 
@@ -50,12 +54,24 @@
 
     &--land {
       margin-top: 1rem;
+
+      @include respond(phone2) { 
+        height: 40rem;
+      }
+
+      @include respond(sx-phone) { 
+        height: 35rem;
+      }
     }
   }
   
 
   &__image-box {
     height: 18.4rem;
+
+    @include respond(sx-phone) { 
+      height: 15.4rem;
+    }
 
     &--2 {
       height: 17.4rem;
@@ -79,6 +95,10 @@
     font-weight: bold;
     margin: 1.6rem .8rem 0 .8rem;
 
+    @include respond(sx-phone) { 
+      margin: .2rem .2rem 0 .2rem;
+    }
+
     &--2 {
       color: #000 !important;
       font-size: 3rem;
@@ -91,6 +111,15 @@
     font-size: 1.4rem;
     font-kerning: .4rem;
     margin: 0 .8rem 0 .8rem;
+
+    @include respond(m-phone2) {
+      font-size: 1rem;
+    }
+    
+    @include respond(s-phone2) {
+      font-size: .3rem;
+      margin: 0 .2rem 0 .2rem;
+    }
 
     &--read {
       color: $red-color;
@@ -109,6 +138,10 @@
     font-kerning: .4rem;
     margin: .8rem .8rem 0 .4rem;
     color: rgba(0, 0, 0, 50%);
+
+    @include respond(s-phone2) {
+      margin: .2rem .2rem 0 .2rem;
+    }
 
     &--f {
       color: $black-color;

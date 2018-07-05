@@ -31,10 +31,17 @@
     padding: 0.6rem 2rem;
     margin: 4rem 0 8rem 0;
 
+    @include respond(tab) { 
+      padding: 2rem 3rem;    
+    }
+
     &:not(:last-child) {
       border-radius: 1.6rem;
-      padding: 0.8rem 2rem;
       margin-right: 1.2rem;
+
+      @include respond(tab) { 
+      margin-right: 4.2rem;   
+      }
     }
   }
 }

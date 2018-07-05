@@ -1,3 +1,39 @@
+//Responsive Navigation Bar
+$(function() {
+  function slideMenu() {
+    var activeState = $("#menu-container .menu-list").hasClass("active");
+    $("#menu-container .menu-list").animate(
+      {
+        left: activeState ? "0%" : "-100%"
+      },
+      400
+    );
+  }
+  $("#menu-wrapper").click(function(event) {
+    event.stopPropagation();
+    $("#hamburger-menu").toggleClass("open");
+    $("#menu-container .menu-list").toggleClass("active");
+    slideMenu();
+
+    $("body").toggleClass("overflow-hidden");
+  });
+
+  $(".menu-list").find(".accordion-toggle").click(function() {
+    $(this).next().toggleClass("open").slideToggle("fast");
+    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+    $(".menu-list .accordion-content")
+      .not($(this).next())
+      .slideUp("fast")
+      .removeClass("open");
+    $(".menu-list .accordion-toggle")
+      .not(jQuery(this))
+      .removeClass("active-tab")
+      .find(".menu-link")
+      .removeClass("active");
+  });
+}); // jQuery load
+
 /* Scroll Feature */
 flip = document.getElementsByClassName("flip")[0];
 flip2 = document.getElementsByClassName("flip2")[0];
@@ -7,10 +43,10 @@ console.log(flip2.offsetTop)
 
 console.dir(flip)
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
   // console.dir(flip)
-  if (window.pageYOffset >= flip.offsetTop-200) {
+  if (window.pageYOffset >= flip.offsetTop - 200) {
     console.log(window.pageYOffset)
     flip.style.animation = "rotate 3s ease 1s backwards";
     flip2.style.animation = "rotate 3s ease 2s backwards";
@@ -20,7 +56,7 @@ window.onscroll = function() {
     flip2.style.display = "block";
     flip3.style.display = "block";
     flip4.style.display = "block";
-    
+
     console.log(flip2.offsetTop)
   }
 };
@@ -50,7 +86,7 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.onclick = function (e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown");
     if (myDropdown.classList.contains("show")) {
@@ -68,7 +104,7 @@ function myFunction2() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.onclick = function (e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown2");
     if (myDropdown.classList.contains("show")) {
@@ -86,7 +122,7 @@ function myFunction3() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.onclick = function (e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown3");
     if (myDropdown.classList.contains("show")) {
@@ -94,3 +130,45 @@ window.onclick = function(e) {
     }
   }
 };
+
+// LOADER
+$(window).load(function () {
+  $('.cssloader').fadeOut('slow', function () { $(this).remove(); });
+});
+
+
+//Responsive Navigation Bar
+$(function () {
+  function slideMenu() {
+    var activeState = $("#menu-container .menu-list").hasClass("active");
+    $("#menu-container .menu-list").animate(
+      {
+        left: activeState ? "0%" : "-100%"
+      },
+      400  
+    );
+  }
+  $("#menu-wrapper").click(function (event) {
+    event.stopPropagation();
+    $("#hamburger-menu").toggleClass("open");
+    $("#menu-container .menu-list").toggleClass("active");
+    slideMenu();
+
+    $("body").toggleClass("overflow-hidden");
+  });
+
+  $(".menu-list").find(".accordion-toggle").click(function () {
+    $(this).next().toggleClass("open").slideToggle("fast");
+    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+    $(".menu-list .accordion-content")
+      .not($(this).next())
+      .slideUp("fast")
+      .removeClass("open");
+    $(".menu-list .accordion-toggle")
+      .not(jQuery(this))
+      .removeClass("active-tab")
+      .find(".menu-link")
+      .removeClass("active");
+  });
+}); // jQuery load

@@ -1,6 +1,18 @@
 .news {
   &__text {
     margin-top: 22rem;
+
+    @include respond(phone) { 
+      margin-top: 18rem;
+    }
+
+    @include respond(m-phone2) { 
+      margin-top: 14rem;
+    }
+
+    @include respond(sx-phone) { 
+     margin-top: 11rem;
+    }
   }
 
   &__share {
@@ -17,6 +29,14 @@
 
     &__card {
       @include card;
+
+      @include respond(tab-port2) { 
+        padding: 0.8rem;
+      }
+
+      @include respond(sx-phone) { 
+        padding: 0.5rem;
+      }
     }
 
     &__shape {
@@ -25,6 +45,25 @@
       height: 16rem;
       margin-left: 1.6rem;
       width: 16rem;
+
+      @include respond(l-phone) {
+        height: 14rem;
+        width: 14rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 0rem;
+      }
+
+      @include respond(m-phone2) { 
+        height: 10rem;
+        width: 10rem;
+      }
+
+      @include respond(sx-phone) { 
+        height: 7rem;
+        width: 7rem;
+      }
 
       &--img {
         object-fit: cover;

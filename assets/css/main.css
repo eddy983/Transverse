@@ -660,7 +660,7 @@ a {
       height: 32vh; } }
   @media (max-width: 50em) {
     .footer {
-      height: 34vh; } }
+      height: 21vh; } }
   @media (max-width: 41.125em) {
     .footer {
       height: 104vh; } }
@@ -669,7 +669,7 @@ a {
       height: 73vh; } }
   @media (max-width: 34.5625em) {
     .footer {
-      height: 95vh; } }
+      height: 88vh; } }
   @media (max-width: 23.4375em) {
     .footer {
       height: 101vh; } }

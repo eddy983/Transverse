@@ -28,7 +28,7 @@
   }
 
   @include respond(tab-port3) {
-    height: 34vh;
+    height: 21vh;
   }
 
   @include respond(l-phone) {
@@ -40,7 +40,7 @@
   }
 
   @include respond(phone2) {
-    height: 95vh;
+    height: 88vh;
   }
 
   @include respond(s-phone2) {

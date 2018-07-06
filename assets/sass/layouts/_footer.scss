@@ -11,9 +11,9 @@
     height: 55vh;  
   }
 
-  // @include respond(tab-land) {
-  //   height: 43vh;
-  // }
+  @include respond(tab-land) {
+    height: 51vh;
+  }
 
   @include respond(tab-land2) {
     height: 27vh;

@@ -640,6 +640,9 @@ a {
   @media (max-width: 90em) {
     .footer {
       height: 55vh; } }
+  @media (max-width: 80em) {
+    .footer {
+      height: 51vh; } }
   @media (max-width: 62.25em) {
     .footer {
       height: 27vh; } }

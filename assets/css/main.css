@@ -351,7 +351,7 @@ body {
   @media (max-width: 23.4375em) {
     .news__card__brief-body {
       font-size: .3rem;
-      margin: 0 .2rem 1.1rem .2rem; } }
+      margin: 0 .2rem 1.1remw .2rem; } }
   .news__card__brief-body--read {
     color: #FF0000;
     font-weight: bold; }

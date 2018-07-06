@@ -12,7 +12,8 @@
   outline: none;
   padding: 0;
   position: absolute;
-  right: 46%;  
+  right: 46%;
+  text-align: center;  
 
   @include respond(l-phone) {
     font-size: 2.2rem;

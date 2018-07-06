@@ -103,6 +103,10 @@
       font-size: 1.6rem;
     }
 
+    @include respond(s-phone2) {
+      margin: .4rem 0rem .4rem 0rem;
+    }
+
     @include respond(sx-phone) { 
       margin: .2rem .2rem 0 .2rem;
     }
@@ -134,7 +138,7 @@
     
     @include respond(s-phone2) {
       font-size: .3rem;
-      margin: 0 .2rem 0 .2rem;
+      margin: 0 .2rem 1.1rem .2rem;
     }
 
     &--read {
@@ -166,6 +170,10 @@
 
     &--p {
       margin: .8rem .2rem 0 .4rem;
+
+      @include respond(s-phone2) {
+        margin: .8rem .2rem 0 0rem;
+      }
       &:hover {
         color: $blue-color;
       }

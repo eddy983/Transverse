@@ -147,6 +147,14 @@
   max-width: $grid-width;
   margin: 0 6.7rem;
 
+  @include respond(big-desktop) { 
+    margin: 0 44.7rem;  
+  }
+
+  @include respond(big-desktop2) { 
+    margin: 0 38.7rem;  
+  }
+
   @include respond(l-phone) { 
     margin: 0 16.7rem;
   }

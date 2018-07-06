@@ -642,7 +642,7 @@ a {
   margin-top: 4rem; }
   @media (max-width: 160em) {
     .footer {
-      height: 38vh; } }
+      height: 57vh; } }
   @media (max-width: 90em) {
     .footer {
       height: 55vh; } }
@@ -872,6 +872,12 @@ a {
 .row-a {
   max-width: 144rem;
   margin: 0 6.7rem; }
+  @media (max-width: 160em) {
+    .row-a {
+      margin: 0 44.7rem; } }
+  @media (max-width: 138.5625em) {
+    .row-a {
+      margin: 0 38.7rem; } }
   @media (max-width: 41.125em) {
     .row-a {
       margin: 0 16.7rem; } }

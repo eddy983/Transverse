@@ -59,6 +59,10 @@
         height: 40rem;
       }
 
+      @include respond(s-phone2) { 
+        height: 38rem;
+      }
+
       @include respond(sx-phone) { 
         height: 35rem;
       }
@@ -69,8 +73,16 @@
   &__image-box {
     height: 18.4rem;
 
+    @include respond(tab) { 
+      height: 16.4rem;
+    }
+    
+    @include respond(s-phone3) { 
+      height: 14.4rem;
+    }
+
     @include respond(sx-phone) { 
-      height: 15.4rem;
+      height: 12.4rem;
     }
 
     &--2 {
@@ -103,12 +115,16 @@
       font-size: 1.6rem;
     }
 
+    @include respond(m-phone-m) {
+      font-size: 1.4rem;
+    }
+
     @include respond(s-phone2) {
-      margin: .4rem 0rem .4rem 0rem;
+      //margin: .4rem 0rem .4rem 0rem;
     }
 
     @include respond(sx-phone) { 
-      margin: .2rem .2rem 0 .2rem;
+      //margin: .2rem .2rem 0 .2rem;
     }
 
     &--2 {
@@ -132,18 +148,30 @@
       font-size: 1.4rem;
     }
 
+    @include respond(tab) { 
+      margin: 1rem .8rem 0 .8rem
+    }
+
+    @include respond(m-phone-m) {
+      font-size: 1.4rem;
+    }
+
     @include respond(m-phone2) {
       font-size: 1rem;
     }
     
     @include respond(s-phone2) {
       font-size: .3rem;
-      margin: 0 .2rem 1.1remw .2rem;
+      //margin: 0 .2rem 1.1rem .2rem;
     }
 
     &--read {
       color: $red-color;
       font-weight: bold;
+
+      @include respond(tab) {
+        font-size: 1.8rem;
+      }
 
       &:hover {
         color: $blue-color;
@@ -160,7 +188,7 @@
     color: rgba(0, 0, 0, 50%);
 
     @include respond(s-phone2) {
-      margin: .2rem .2rem 0 .2rem;
+      margin: 1rem .2rem 0 .2rem;
     }
 
     &--f {
@@ -172,7 +200,7 @@
       margin: .8rem .2rem 0 .4rem;
 
       @include respond(s-phone2) {
-        margin: .8rem .2rem 0 0rem;
+        //margin: .8rem .2rem 0 0rem;
       }
       &:hover {
         color: $blue-color;

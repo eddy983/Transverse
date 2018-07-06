@@ -48,6 +48,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint == sx-phone {
     @media (max-width: 20em) { @content }; // 320px in em 
   }
+  @if $breakpoint == s-phone3 {
+    @media (max-width: 20.6875em) { @content }; // 331px in em 
+  }
   @if $breakpoint == s-phone2 {
     @media (max-width: 23.4375em) { @content }; // 375px in em 
   }

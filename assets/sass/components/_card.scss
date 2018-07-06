@@ -173,6 +173,14 @@
         font-size: 1.8rem;
       }
 
+      &__see-more {
+        @include respond(l-phone) {
+          font-size: 3rem;
+        }
+      }
+
+     
+
       &:hover {
         color: $blue-color;
       }

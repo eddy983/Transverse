@@ -33,6 +33,7 @@
 
   @include respond(l-phone) {
     height: 104vh;
+    margin-top: 8rem;
   }
 
   @include respond(phone) {
@@ -137,13 +138,21 @@
     @include respond(l-phone) { 
       font-size: 2.6rem;
       margin-top: 7rem;
-      width: 50%;
+      width: 60%;
+    }
+
+    @include respond(m-phone-m) { 
+      width: 100%;
     }
 
     &__input{
       @include respond(l-phone) { 
         margin-top: 1rem;
         width: 80%;
+      }
+
+      @include respond(s-phone3) { 
+        width: 90%
       }
     }
   }
@@ -154,7 +163,7 @@
     @include respond(l-phone) { 
       float: right;
       margin-top: -18.8rem;
-      width: 50%;
+      width: 40%;
     }
 
     @include respond(phone) { 
@@ -164,11 +173,14 @@
     @include respond(phone2) { 
       margin-top: -17.8rem;
     }
-    @include respond(m-phone2) { 
-      margin-top: -20.8rem;
+
+    @include respond(m-phone-m) { 
+      margin-top: 1rem;
+      width: 100%;
     }
+
     @include respond(sx-phone) { 
-      margin-top: -19.8rem;
+     
     }
 
     &__icon {
@@ -176,7 +188,15 @@
       margin-right: 2.8rem;
 
       @include respond(l-phone) { 
-        height: 5.2rem;
+        height: 8.2rem;
+      }
+
+      @include respond(s-phone3) { 
+        height: 7.2rem;
+      }
+
+      @include respond(sx-phone) { 
+        height: 6.8rem;
       }
     }
   }

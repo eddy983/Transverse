@@ -13,6 +13,10 @@
   padding: 0;
   position: absolute;
   right: 46%;  
+
+  @include respond(l-phone) {
+    font-size: 3rem;
+  }
 }
 
 #myBtn:hover {

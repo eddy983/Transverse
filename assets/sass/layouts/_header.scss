@@ -17,8 +17,16 @@
     height: 25vh;
   }
 
+  @include respond(m-phone-m) { 
+    height: 48rem;
+  }
+
+  @include respond(s-phone2) { 
+    height: 38rem;
+  }
+
   @include respond(sx-phone) {
-    height: 18vh;
+    height: 20vh;
   }
 
   
@@ -62,7 +70,7 @@
     }
 
     @include respond(tab-port) { 
-      margin: 16rem auto 0 auto;
+      margin: 5rem auto 0 auto;
     }
 
     @include respond(tab) { 
@@ -81,18 +89,37 @@
       width: 82.4rem;
 
       @include respond(desktop) { 
+        height: 38rem;
+        width: 70.4rem;
+      }
+
+      @include respond(tab-port) { 
+        height: 44rem;
+        width: 84.4rem;
+      }
+
+      @include respond(tab) { 
         height: 40rem;
-        width: 75.4rem;
+        width: 84.4rem;
+      }
+
+      @include respond(l-phone) { 
+        height: 36rem;
+        width: 72.4rem;
       }
 
       @include respond(phone) { 
-        height: 36rem;
+        height: 30rem;
         width: 55.4rem;
       }
 
       @include respond(phone2) { 
         height: 28rem;
         width: 54.4rem;
+      }
+
+      @include respond(m-phone-m) { 
+        height: 36rem;
       }
 
       @include respond(m-phone2) { 

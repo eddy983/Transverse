@@ -8,7 +8,7 @@
   }
 
   @include respond(desktop) { 
-    height: 63vh;  
+    height: 61vh;  
   }
 
   @include respond(tab-land) {
@@ -200,7 +200,7 @@
     }
 
     &__icon {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       margin-top: .2rem;
 

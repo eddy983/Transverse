@@ -57,6 +57,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint == m-phone2 {
     @media (max-width: 26.5em) { @content }; // 424px in em
   }
+  @if $breakpoint == m-phone-m {
+    @media (max-width: 30.625em) { @content }; // 490px in em
+  }
   @if $breakpoint == m-phone {
     @media (max-width: 31.25em) { @content }; // 500px in em
   }

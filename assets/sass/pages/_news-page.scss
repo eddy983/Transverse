@@ -2,7 +2,15 @@
   &__text {
     margin-top: 22rem;
 
+    @include respond(tab) { 
+      margin-top: 26rem;
+    }
+
     @include respond(phone) { 
+      margin-top: 24rem;
+    }
+
+    @include respond(m-phone-m) { 
       margin-top: 18rem;
     }
 

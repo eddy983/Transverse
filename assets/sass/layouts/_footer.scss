@@ -44,6 +44,10 @@
     height: 88vh;
   }
 
+  @include respond(m-phone4) {
+    height: 102vh;
+  }
+
   @include respond(s-phone2) {
     height: 101vh;
   }
@@ -164,10 +168,6 @@
       float: right;
       margin-top: -18.8rem;
       width: 40%;
-    }
-
-    @include respond(phone) { 
-      margin-top: -22.8rem;
     }
 
     @include respond(phone2) { 

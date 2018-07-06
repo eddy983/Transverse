@@ -710,6 +710,9 @@ a {
   @media (max-width: 34.5625em) {
     .footer {
       height: 88vh; } }
+  @media (max-width: 23.4375em) {
+    .footer {
+      height: 102vh; } }
   @media (max-width: 20em) {
     .footer {
       height: 128vh; } }
@@ -789,9 +792,6 @@ a {
         float: right;
         margin-top: -18.8rem;
         width: 40%; } }
-    @media (max-width: 37.5em) {
-      .footer__social-media {
-        margin-top: -22.8rem; } }
     @media (max-width: 34.5625em) {
       .footer__social-media {
         margin-top: -17.8rem; } }

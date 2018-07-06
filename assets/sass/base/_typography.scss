@@ -38,6 +38,10 @@ body {
     font-size: 5rem;  
   }
 
+  @include respond(m-phone4) { 
+    font-size: 4.5rem;  
+  }
+
   @include respond(s-phone3) { 
     font-size: 4rem;  
   }

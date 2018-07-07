@@ -77,12 +77,20 @@
       height: 16.4rem;
     }
     
+    @include respond(l-phone) { 
+      height: 20.4rem;
+    }
+
+    @include respond(m-phone4) { 
+      height: 18.4rem;
+    }
+
     @include respond(s-phone3) { 
-      height: 14.4rem;
+      height: 16.4rem;
     }
 
     @include respond(sx-phone) { 
-      height: 12.4rem;
+      height: 13.4rem;
     }
 
     &--2 {
@@ -115,17 +123,26 @@
       font-size: 1.6rem;
     }
 
-    @include respond(m-phone-m) {
+    @include respond(l-phone) { 
+      font-size: 1.7rem;
+    }
+
+    @include respond(phone2) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone3) { 
+      font-size: 1.5rem;
+    }
+
+    @include respond(m-phone-m) { 
       font-size: 1.4rem;
     }
 
-    @include respond(s-phone2) {
-      //margin: .4rem 0rem .4rem 0rem;
+    @include respond(sx-phone) { 
+      font-size: 1.3rem;
     }
 
-    @include respond(sx-phone) { 
-      //margin: .2rem .2rem 0 .2rem;
-    }
 
     &--2 {
       color: #000 !important;
@@ -152,17 +169,24 @@
       margin: 1rem .8rem 0 .8rem
     }
 
-    @include respond(m-phone-m) {
+    @include respond(l-phone) { 
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone2) {
+      font-size: 1.5rem;
+    }
+    
+    @include respond(phone3) { 
       font-size: 1.4rem;
     }
 
-    @include respond(m-phone2) {
-      font-size: 1rem;
+    @include respond(m-phone-m) { 
+      font-size: 1.2rem;
     }
-    
-    @include respond(s-phone2) {
-      font-size: .3rem;
-      //margin: 0 .2rem 1.1rem .2rem;
+
+    @include respond(sx-phone) { 
+      font-size: 1.1rem;
     }
 
     &--read {
@@ -171,6 +195,10 @@
 
       @include respond(tab) {
         font-size: 1.8rem;
+      }
+
+      @include respond(sx-phone) { 
+        font-size: 1.6rem;
       }
 
       &__see-more {

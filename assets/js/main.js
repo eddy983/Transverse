@@ -18,36 +18,56 @@ $(function() {
     $("body").toggleClass("overflow-hidden");
   });
 
-  $(".menu-list").find(".accordion-toggle").click(function() {
-    $(this).next().toggleClass("open").slideToggle("fast");
-    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+  $(".menu-list")
+    .find(".accordion-toggle")
+    .click(function() {
+      $(this)
+        .next()
+        .toggleClass("open")
+        .slideToggle("fast");
+      $(this)
+        .toggleClass("active-tab")
+        .find(".menu-link")
+        .toggleClass("active");
 
-    $(".menu-list .accordion-content")
-      .not($(this).next())
-      .slideUp("fast")
-      .removeClass("open");
-    $(".menu-list .accordion-toggle")
-      .not(jQuery(this))
-      .removeClass("active-tab")
-      .find(".menu-link")
-      .removeClass("active");
-  });
+      $(".menu-list .accordion-content")
+        .not($(this).next())
+        .slideUp("fast")
+        .removeClass("open");
+      $(".menu-list .accordion-toggle")
+        .not(jQuery(this))
+        .removeClass("active-tab")
+        .find(".menu-link")
+        .removeClass("active");
+    });
 }); // jQuery load
+
+/* Responsive Search Bar */
+function expand() {
+  $(".search").toggleClass("close");
+  $(".input").toggleClass("square");
+  if ($(".search").hasClass("close")) {
+    $("input").focus();
+  } else {
+    $("input").blur();
+  }
+}
+$("button").on("click", expand);
 
 /* Scroll Feature */
 flip = document.getElementsByClassName("flip")[0];
 flip2 = document.getElementsByClassName("flip2")[0];
 flip3 = document.getElementsByClassName("flip3")[0];
 flip4 = document.getElementsByClassName("flip4")[0];
-console.log(flip2.offsetTop)
+console.log(flip2.offsetTop);
 
-console.dir(flip)
+console.dir(flip);
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
+window.onscroll = function() {
   scrollFunction();
   // console.dir(flip)
   if (window.pageYOffset >= flip.offsetTop - 200) {
-    console.log(window.pageYOffset)
+    console.log(window.pageYOffset);
     flip.style.animation = "rotate 3s ease 1s backwards";
     flip2.style.animation = "rotate 3s ease 2s backwards";
     flip3.style.animation = "rotate 3s ease 3s backwards";
@@ -57,7 +77,7 @@ window.onscroll = function () {
     flip3.style.display = "block";
     flip4.style.display = "block";
 
-    console.log(flip2.offsetTop)
+    console.log(flip2.offsetTop);
   }
 };
 
@@ -86,7 +106,7 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
+window.onclick = function(e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown");
     if (myDropdown.classList.contains("show")) {
@@ -104,7 +124,7 @@ function myFunction2() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
+window.onclick = function(e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown2");
     if (myDropdown.classList.contains("show")) {
@@ -122,7 +142,7 @@ function myFunction3() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
+window.onclick = function(e) {
   if (!e.target.matches(".dropbtn")) {
     var myDropdown = document.getElementById("myDropdown3");
     if (myDropdown.classList.contains("show")) {
@@ -132,23 +152,24 @@ window.onclick = function (e) {
 };
 
 // LOADER
-$(window).load(function () {
-  $('.cssloader').fadeOut('slow', function () { $(this).remove(); });
+$(window).load(function() {
+  $(".cssloader").fadeOut("slow", function() {
+    $(this).remove();
+  });
 });
 
-
 //Responsive Navigation Bar
-$(function () {
+$(function() {
   function slideMenu() {
     var activeState = $("#menu-container .menu-list").hasClass("active");
     $("#menu-container .menu-list").animate(
       {
         left: activeState ? "0%" : "-100%"
       },
-      400  
+      400
     );
   }
-  $("#menu-wrapper").click(function (event) {
+  $("#menu-wrapper").click(function(event) {
     event.stopPropagation();
     $("#hamburger-menu").toggleClass("open");
     $("#menu-container .menu-list").toggleClass("active");
@@ -157,18 +178,26 @@ $(function () {
     $("body").toggleClass("overflow-hidden");
   });
 
-  $(".menu-list").find(".accordion-toggle").click(function () {
-    $(this).next().toggleClass("open").slideToggle("fast");
-    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+  $(".menu-list")
+    .find(".accordion-toggle")
+    .click(function() {
+      $(this)
+        .next()
+        .toggleClass("open")
+        .slideToggle("fast");
+      $(this)
+        .toggleClass("active-tab")
+        .find(".menu-link")
+        .toggleClass("active");
 
-    $(".menu-list .accordion-content")
-      .not($(this).next())
-      .slideUp("fast")
-      .removeClass("open");
-    $(".menu-list .accordion-toggle")
-      .not(jQuery(this))
-      .removeClass("active-tab")
-      .find(".menu-link")
-      .removeClass("active");
-  });
+      $(".menu-list .accordion-content")
+        .not($(this).next())
+        .slideUp("fast")
+        .removeClass("open");
+      $(".menu-list .accordion-toggle")
+        .not(jQuery(this))
+        .removeClass("active-tab")
+        .find(".menu-link")
+        .removeClass("active");
+    });
 }); // jQuery load

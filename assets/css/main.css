@@ -878,10 +878,10 @@ a {
       margin: 0 1.7rem 0 6.7rem; } }
   @media (max-width: 26.5em) {
     .row {
-      margin: 0 1rem 0 5.7rem; } }
+      margin: 0 2rem 0 5.7rem; } }
   @media (max-width: 23.4375em) {
     .row {
-      margin: 0 1rem 0 4.7rem; } }
+      margin: 0 1.6rem 0 4.7rem; } }
   @media (max-width: 20.6875em) {
     .row {
       margin: 0 2rem 0 4.7rem; } }
@@ -908,7 +908,7 @@ a {
     width: calc((100% - 3 * 3rem) / 4); }
     @media (max-width: 41.125em) {
       .row .col-1-of-4 {
-        width: calc((92% - 1rem) / 2); } }
+        width: 95%; } }
   .row .col-1-of-4-n {
     width: calc((100% - 3 * 3rem) / 4); }
     @media (max-width: 41.125em) {

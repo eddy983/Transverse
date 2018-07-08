@@ -19,11 +19,11 @@
   }
 
   @include respond(m-phone2) { 
-    margin: 0 1rem 0 5.7rem;  
+    margin: 0 2rem 0 5.7rem;  
   }
 
   @include respond(m-phone4) { 
-    margin: 0 1rem 0 4.7rem;  
+    margin: 0 1.6rem 0 4.7rem;  
   }
 
   @include respond(s-phone3) { 
@@ -67,7 +67,7 @@
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
 
     @include respond(l-phone) { 
-      width: calc((92% - 1rem) / 2);
+      width: 95%;
     }
   }
 

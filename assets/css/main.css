@@ -400,7 +400,7 @@ body {
         margin: 6.6rem .8rem 7.6rem .8rem; } }
     @media (max-width: 23.4375em) {
       .news__card__title--2 {
-        font-size: 2.5rem; } }
+        font-size: 2.2rem; } }
     @media (max-width: 20.6875em) {
       .news__card__title--2 {
         font-size: 2rem; } }
@@ -512,6 +512,7 @@ body {
 
 /** page **/
 .cssloader {
+  display: none;
   padding-top: calc(45vh - 30.5rem);
   position: fixed;
   top: 50%;

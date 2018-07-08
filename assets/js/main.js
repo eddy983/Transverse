@@ -1,3 +1,8 @@
+window.onbeforeunload = ((e)=>{
+  console.log("switching")
+  document.getElementsByClassName("cssloader")[0].style.display = "block";
+})
+
 //Responsive Navigation Bar
 $(function() {
   function slideMenu() {

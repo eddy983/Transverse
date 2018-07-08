@@ -193,15 +193,19 @@
   }
 
   @include respond(l-phone) {  
+    margin: 0 12.7rem 0 17.7rem;
+  }
+
+  @include respond(m-phone-m) {  
+    margin: 0 6.7rem 0 12.7rem;
+  }
+
+  @include respond(m-phone4) {  
     margin: 0 3.7rem 0 6.7rem;
   }
 
-  @include respond(m-phone2) { 
-    //margin: 0 6.7rem;
-  }
-
-  @include respond(sx-phone) { 
-   // margin: 0 3.7rem;
+  @include respond(s-phone3) {  
+    margin: 0 0.7rem 0 3.7rem;
   }
 
   &:not(:last-child) {

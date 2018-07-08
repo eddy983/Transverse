@@ -1,5 +1,4 @@
 .news__card {
-
   &__box {
     border: 1.5px solid #c4c4c4;
     border-radius: 2px;
@@ -9,47 +8,37 @@
     margin-top: 4rem;
     width: 100%;
     perspective: 150rem;
-    
-    @include respond(l-phone) { 
+
+    @include respond(l-phone) {
       height: 28.9rem;
     }
-    
 
     &--2 {
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.65);
       height: 34rem;
-      transition: all .5s;
+      transition: all 0.5s;
       display: none;
 
       &:hover {
-        transform: scale(1.1); 
+        transform: scale(1.1);
 
-        @include respond(tab-land2) { 
-          transform: none; 
+        @include respond(tab-land2) {
+          transform: none;
         }
       }
 
-
-      @include respond(desktop) { 
-        height: 40rem; 
+      @include respond(desktop) {
+        height: 40rem;
       }
 
-      @include respond(l-phone) { 
-        height: 19rem;
-      }
-
-      @include respond(m-phone4) { 
-        height: 17rem;
-      }
-
-      @include respond(sx-phone) { 
-        height: 15rem;
-      }
+      // @include respond(l-phone) {
+      //   height: 19rem;
+      // }
 
       &__low {
         margin: 6rem 0 8rem 0;
 
-        @include respond(l-phone) { 
+        @include respond(l-phone) {
           margin: 4rem 0 4rem 0;
         }
       }
@@ -62,54 +51,48 @@
         padding-right: 1rem;
       }
 
-      @include respond(phonen) { 
+      @include respond(phonen) {
         height: 33rem;
       }
 
-      @include respond(s-phone2) { 
+      @include respond(s-phone2) {
         height: 38rem;
       }
 
-      @include respond(m-phone2) { 
+      @include respond(m-phone2) {
         height: 28rem;
       }
 
-      @include respond(sxx-phone) { 
+      @include respond(sxx-phone) {
         height: 32rem;
       }
     }
   }
-  
 
   &__image-box {
     height: 18.4rem;
 
-    @include respond(tab) { 
+    @include respond(tab) {
       height: 16.4rem;
     }
-    
+
     @include respond(l-phone) {
-      float: left; 
+      float: left;
       height: 100%;
       margin-right: 1rem;
       width: 30%;
     }
 
-
     &--2 {
       height: 17.4rem;
 
-      @include respond(desktop) { 
+      @include respond(desktop) {
         height: 22.4rem;
       }
 
-      @include respond(l-phone) { 
-        height: 100%;
-        width: 40%;
-      }
-
-      @include respond(m-phone2) { 
-        width: 35%;
+      @include respond(l-phone) {
+        float: none;
+        width: 100%;
       }
     }
   }
@@ -121,85 +104,82 @@
     width: 100%;
   }
 
-
   &__title {
     font-size: 1.6rem;
-    font-kerning: .4rem;
+    font-kerning: 0.4rem;
     font-weight: bold;
-    margin: 1.6rem .8rem 0 .8rem;
+    margin: 1.6rem 0.8rem 0 0.8rem;
 
-    @include respond(desktop3) { 
+    @include respond(desktop3) {
       font-size: 1.5rem;
     }
 
-    @include respond(tab-land) { 
+    @include respond(tab-land) {
       font-size: 1.6rem;
     }
 
-    @include respond(l-phone) { 
+    @include respond(l-phone) {
       font-size: 2.6rem;
     }
 
-    @include respond(m-phone2) { 
+    @include respond(m-phone2) {
       font-size: 2rem;
     }
-
-
 
     &--2 {
       color: #000 !important;
       font-size: 3rem;
       font-weight: 400;
-      margin: 5.6rem .8rem 0 .8rem;
+      margin: 5.6rem 0.8rem 0 0.8rem;
 
-      @include respond(l-phone) { 
-        margin: 7.6rem .8rem 7.6rem .8rem;
-      }
+      // @include respond(l-phone) {
+      //   margin: 7.6rem .8rem 7.6rem .8rem;
+      // }
 
-      @include respond(phone) { 
-        margin: 6.6rem .8rem 7.6rem .8rem;
-      }
+      // @include respond(phone) {
+      //   margin: 6.6rem .8rem 7.6rem .8rem;
+      // }
 
-      @include respond(m-phone4) { 
-        font-size: 2.2rem;
-      }
+      // @include respond(m-phone4) {
+      //   font-size: 2.2rem;
+      // }
 
-      @include respond(s-phone3) { 
-        font-size: 2rem;
-      }
+      // @include respond(s-phone3) {
+      //   font-size: 2rem;
+      // }
 
-      @include respond(sx-phone) { 
-        font-size: 1.6rem;
-      }
+      // @include respond(sx-phone) {
+      //   font-size: 1.6rem;
+      // }
     }
   }
 
   &__brief-body {
     font-size: 1.4rem;
-    font-kerning: .4rem;
-    margin: 0 .8rem 0 .8rem;
+    font-kerning: 0.4rem;
+    margin: 0 0.8rem 0 0.8rem;
 
-    @include respond(desktop3) { 
+    @include respond(desktop3) {
       font-size: 1.3rem;
     }
 
-    @include respond(tab-land) { 
+    @include respond(tab-land) {
       font-size: 1.4rem;
     }
 
-    @include respond(tab) { 
-      margin: 1rem .8rem 0 .8rem
+    @include respond(tab) {
+      margin: 1rem 0.8rem 0 0.8rem;
     }
 
-    @include respond(l-phone) { 
+    @include respond(l-phone) {
       font-size: 2.4rem;
     }
 
-    @include respond(m-phone2) { 
+    @include respond(m-phone2) {
       font-size: 2rem;
     }
 
-    @include respond(m-phone4) { 
+    @include respond(m-phone4) {
       font-size: 1.8rem;
     }
 
@@ -211,15 +191,15 @@
         font-size: 1.8rem;
       }
 
-      @include respond(l-phone) { 
+      @include respond(l-phone) {
         font-size: 2.6rem;
       }
 
-      @include respond(m-phone2) { 
+      @include respond(m-phone2) {
         font-size: 2rem;
       }
 
-      @include respond(sx-phone) { 
+      @include respond(sx-phone) {
         font-size: 1.6rem;
       }
 
@@ -229,36 +209,32 @@
         }
       }
 
-     
-
       &:hover {
         color: $blue-color;
       }
     }
   }
 
-  
-
   &__info {
     font-size: 1.1rem;
-    font-kerning: .4rem;
-    margin: .8rem .8rem 0 .4rem;
+    font-kerning: 0.4rem;
+    margin: 0.8rem 0.8rem 0 0.4rem;
     color: rgba(0, 0, 0, 50%);
 
-    @include respond(l-phone) { 
+    @include respond(l-phone) {
       font-size: 2.1rem;
     }
 
-    @include respond(m-phone2) { 
+    @include respond(m-phone2) {
       font-size: 1.8rem;
     }
 
-    @include respond(m-phone4) { 
+    @include respond(m-phone4) {
       font-size: 1.6rem;
     }
 
     @include respond(s-phone2) {
-      margin: 1rem .2rem 0 .2rem;
+      margin: 1rem 0.2rem 0 0.2rem;
     }
 
     &--f {
@@ -267,7 +243,7 @@
     }
 
     &--p {
-      margin: .8rem .2rem 0 .4rem;
+      margin: 0.8rem 0.2rem 0 0.4rem;
 
       @include respond(s-phone2) {
         //margin: .8rem .2rem 0 0rem;
@@ -277,20 +253,4 @@
       }
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -714,7 +714,8 @@ a {
       left: 93%; } }
   @media (max-width: 26.5em) {
     .fr {
-      left: 92%; } }
+      left: 92%;
+      padding: 0 1rem; } }
 
 nav a, #search a {
   color: #fff;

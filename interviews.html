@@ -47,6 +47,20 @@
           <a class="menu-link" href="opinions.html">Opinions</a>
         </li>
         <!-- menu-submenu accordon-content-->
+        <li id="nav5" class="toggle accordion-toggle">
+          <span class="icon-plus"></span>
+          <a class="menu-link" href="#">Special</a>
+        </li>
+        <!-- accordion-toggle -->
+        <ul class="menu-submenu accordion-content">
+          <li>
+            <a class="head" href="features.html">Features</a>
+          </li>
+          <li>
+            <a class="head" href="interviews.html">Interviews</a>
+          </li>
+        </ul>
+        <!-- menu-submenu accordon-content-->
         <li id="nav4" class="toggle accordion-toggle">
           <span class="icon-plus"></span>
           <a class="menu-link" href="#">Columns</a>
@@ -64,20 +78,6 @@
           </li>
           <li>
             <a class="head" href="story-for-the-gods.html">Story for the gods</a>
-          </li>
-        </ul>
-        <!-- menu-submenu accordon-content-->
-        <li id="nav5" class="toggle accordion-toggle">
-          <span class="icon-plus"></span>
-          <a class="menu-link" href="#">Special</a>
-        </li>
-        <!-- accordion-toggle -->
-        <ul class="menu-submenu accordion-content">
-          <li>
-            <a class="head" href="features.html">Features</a>
-          </li>
-          <li>
-            <a class="head" href="interviews.html">Interviews</a>
           </li>
         </ul>
         <!-- menu-submenu accordon-content-->
@@ -104,7 +104,20 @@
       </ul>
       <!-- menu-list accordion-->
     </div>
-    
+
+    <!-- Search Button -->
+
+    <!-- Search overlay !-->
+    <div id="search">
+      <a href="#" id="close-btn">
+        <em class="fa fa-times"></em>
+      </a>
+      <input placeholder="Type here" id="searchbox" type="search" />
+    </div>
+    <a class="fr" href='#search'>
+      <em class="fa fa-search"></em>
+    </a>
+
     <!-- Navigation Bar -->
     <div class="navbar">
       <div class="navbar__items">
@@ -128,15 +141,6 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn dropdown-nav-link" onclick="myFunction2()">Special
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content dropdown-menu" id="myDropdown2">
-            <a href="features.html" class="dropdown-item">Features</a>
-            <a href="interviews.html" class="dropdown-item">Interviews</a>
-          </div>
-        </div>
-        <div class="dropdown">
           <button class="dropbtn dropdown-nav-link" onclick="myFunction()">Columns
             <i class="fa fa-caret-down"></i>
           </button>
@@ -147,9 +151,21 @@
             <a href="story-for-the-gods.html" class="dropdown-item">Story for the gods</a>
           </div>
         </div>
+        <div class="dropdown">
+          <button class="dropbtn dropdown-nav-link" onclick="myFunction2()">Special
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content dropdown-menu" id="myDropdown2">
+            <a href="features.html" class="dropdown-item">Features</a>
+            <a href="interviews.html" class="dropdown-item">Interviews</a>
+          </div>
+        </div>
         <a href="opinions.html" class="navbar__item">Opinions</a>
         <a href="news.html" class="navbar__item">News</a>
         <a href="index.html" class="navbar__item">Home</a>
+        <div class="navbar__shape">
+          <img src="assets/img/T.png" alt="Logo" class="navbar__img">
+        </div>
       </div>
     </div>
 
@@ -449,21 +465,6 @@
               </li>
             </ul>
             <ul class="footer__map__list">
-              <li class="u-margin-link footer-sub">Columns</li>
-              <li class="u-margin-link footer-link">
-                <a href="newsquake.html" class="footer__map__item">NewsQuake</a>
-              </li>
-              <li class="u-margin-link footer-link">
-                <a href="deejays-thoughts.html" class="footer__map__item">A deejays’ thought</a>
-              </li>
-              <li class="u-margin-link footer-link">
-                <a href="dear-millenial.html" class="footer__map__item">Dear Millennials</a>
-              </li>
-              <li class="u-margin-link footer-link">
-                <a href="story-for-the-gods.html" class="footer__map__item">Story for the god</a>
-              </li>
-            </ul>
-            <ul class="footer__map__list">
               <li class="u-margin-link footer-sub">Special</li>
               <li class="u-margin-link footer-link">
                 <a href="features.html" class="footer__map__item">Features</a>
@@ -472,6 +473,22 @@
                 <a href="interviews.html" class="footer__map__item">Interviews</a>
               </li>
             </ul>
+            <ul class="footer__map__list">
+              <li class="u-margin-link footer-sub">Columns</li>
+              <li class="u-margin-link footer-link">
+                <a href="newsquake.html" class="footer__map__item">NewsQuake</a>
+              </li>
+              <li class="u-margin-link footer-link">
+                <a href="deejays-thoughts.html" class="footer__map__item">A Deejays’ Thought</a>
+              </li>
+              <li class="u-margin-link footer-link">
+                <a href="dear-millenial.html" class="footer__map__item">Dear Millennials</a>
+              </li>
+              <li class="u-margin-link footer-link">
+                <a href="story-for-the-gods.html" class="footer__map__item">Story for the gods</a>
+              </li>
+            </ul>
+
             <ul class="footer__map__list">
               <li class="u-margin-link footer-sub">About</li>
               <li class="u-margin-link footer-link">

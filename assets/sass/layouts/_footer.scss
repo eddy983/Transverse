@@ -28,7 +28,7 @@
   }
 
   @include respond(tab-port3) {
-    height: 21vh;
+    height: 25vh;
   }
 
   @include respond(l-phone) {
@@ -44,8 +44,12 @@
     height: 88vh;
   }
 
+  @include respond(m-phone2) {
+    height: 95vh;
+  }
+
   @include respond(m-phone4) {
-    height: 105vh;
+    height: 112vh;
   }
 
   @include respond(s-phone2) {
@@ -53,7 +57,7 @@
   }
 
   @include respond(sx-phone) {
-    height: 128vh;
+    height: 140vh;
   }
 
   
@@ -105,6 +109,10 @@
       @include respond(l-phone) { 
         margin-top: 90.6rem;
       }
+
+      @include respond(m-phone-m) { 
+        margin-top: 100.6rem;
+      }
     }
   }
 
@@ -117,8 +125,9 @@
       width: 15.3rem;
 
       @include respond(l-phone) { 
-        width: 50%;
+        margin-top: 4rem;
         text-align: left;
+        width: 50%;
       }
     }
 

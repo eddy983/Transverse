@@ -60,15 +60,15 @@
       }
 
       @include respond(m-phone2) {
-        height: 25rem;
+        height: 24rem; 
       }
 
       @include respond(s-phone3) {
-        height: 27rem;
+        height: 26rem;
       }
 
       @include respond(sxx-phone) {
-        height: 30rem;
+        height: 28rem;
       }
     }
   }

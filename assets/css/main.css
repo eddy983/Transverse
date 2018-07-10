@@ -327,13 +327,13 @@ body {
         height: 30rem; } }
     @media (max-width: 26.5em) {
       .news__card__box--land {
-        height: 25rem; } }
+        height: 24rem; } }
     @media (max-width: 20.6875em) {
       .news__card__box--land {
-        height: 27rem; } }
+        height: 26rem; } }
     @media (max-width: 18.25em) {
       .news__card__box--land {
-        height: 30rem; } }
+        height: 28rem; } }
 
 .news__card__image-box {
   height: 18.4rem; }

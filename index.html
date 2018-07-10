@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="assets/plug-ins/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Reset CSS
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css'>
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
@@ -110,10 +112,19 @@
     </div>
 
     <!-- Search Button -->
-    <!-- <form id="content">
-      <input type="text" name="input" class="input">
-      <button type="reset" class="search"></button>
-    </form> -->
+
+    <!-- Search overlay !-->
+    <div id="search">
+      <a href="#" id="close-btn">
+        <em class="fa fa-times"></em>
+      </a>
+      <input placeholder="Type here" id="searchbox" type="search" />
+    </div>
+    <a class="fr" href='#search'>
+      <em class="fa fa-search"></em>
+    </a>
+    
+
 
     <!-- Navigation Bar -->
     <div class="navbar">
@@ -160,6 +171,9 @@
         <a href="opinions.html" class="navbar__item">Opinions</a>
         <a href="news.html" class="navbar__item">News</a>
         <a href="index.html" class="navbar__item">Home</a>
+        <div class="navbar__shape">
+          <img src="assets/img/T.png" alt="Logo" class="navbar__img">
+        </div>
       </div>
     </div>
 
@@ -1219,9 +1233,6 @@
 
   </footer>
 
-
-
-
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Popper Js -->
@@ -1231,13 +1242,14 @@
   <!-- Main Js -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Loader -->
-  <div class="cssloader">
-    <div class="sh1"></div>
-    <div class="sh2"></div>
-    <h4 class="lt">loading</h4>
-  </div>
 </body>
+
+<!-- Loader -->
+<div class="cssloader">
+  <div class="sh1"></div>
+  <div class="sh2"></div>
+  <h4 class="lt">loading</h4>
+</div>
 
 
 

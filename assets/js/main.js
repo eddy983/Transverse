@@ -1,7 +1,14 @@
-window.onbeforeunload = ((e)=>{
-  console.log("switching")
+//this is only for demonstration of different fly-in directions
+
+var changeClass = function(name){
+  $('#search').removeAttr('class').addClass(name);
+}
+
+window.onbeforeunload = e => {
+  console.log("switching");
   document.getElementsByClassName("cssloader")[0].style.display = "block";
-})
+};
+
 
 //Responsive Navigation Bar
 $(function() {

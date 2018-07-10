@@ -15,9 +15,9 @@ a { text-decoration: none; color: black;}
 
 #menu-wrapper #hamburger-menu {
     position: relative;
-    width: 25px;
+    width: 40px;
     height: 20px;
-    margin: 15px;
+    margin: 20px;
 }
 
 #menu-wrapper #hamburger-menu span {
@@ -38,13 +38,13 @@ a { text-decoration: none; color: black;}
 }
 
 #menu-wrapper #hamburger-menu span:nth-child(1) {
-    top: 0;
+    top: -4px;
 }
 #menu-wrapper #hamburger-menu span:nth-child(2) {
     top: 9px;
 }
 #menu-wrapper #hamburger-menu span:nth-child(3) {
-    top: 18px;
+    top: 22px;
 }
 #menu-wrapper #hamburger-menu.open span:nth-child(1) {
     top: 9px;
@@ -112,7 +112,7 @@ a { text-decoration: none; color: black;}
     top: 50%;
     right: 30px;
     width: 15px;
-    height: 2px;
+    height: 4px;
     margin-top: -1px;
     background-color: #5a5858;
     -webkit-transform-origin: 50% 50%;

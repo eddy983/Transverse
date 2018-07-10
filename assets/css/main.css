@@ -550,7 +550,7 @@ body {
       color: #fff;
       cursor: pointer;
       float: right;
-      font-size: 1.4rem;
+      font-size: 2rem;
       margin: 0.8rem 3rem 0 0;
       padding: 0.4rem 1rem; }
       @media (max-width: 160em) {
@@ -558,13 +558,13 @@ body {
           font-size: 2.4rem; } }
       @media (max-width: 90em) {
         .navbar__search-container--button {
-          font-size: 1.4rem; } }
+          font-size: 2rem; } }
       .navbar__search-container--button:hover {
         background: #6295BF; }
     .navbar__search-container--input {
       padding: 0.9rem;
       margin-top: 0.8rem;
-      font-size: 1.4rem;
+      font-size: 2rem;
       border: none;
       border-top-left-radius: 0.8rem;
       border-bottom-left-radius: 0.8rem; }
@@ -573,32 +573,41 @@ body {
           font-size: 2.4rem; } }
       @media (max-width: 90em) {
         .navbar__search-container--input {
-          font-size: 1.4rem; } }
+          font-size: 2rem; } }
   .navbar__item {
     border-bottom: 0.4rem solid transparent;
     display: block;
     float: right;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #000;
     text-align: center;
     text-decoration: none;
-    padding: 1.2rem 0.8rem; }
+    padding: 1.2rem 1.8rem; }
     @media (max-width: 160em) {
       .navbar__item {
         font-size: 2.4rem; } }
     @media (max-width: 90em) {
       .navbar__item {
-        font-size: 1.4rem; } }
+        font-size: 2rem; } }
     .navbar__item:hover, .navbar__item:focus, .navbar__item:active, .navbar__item::after {
       color: #6295BF;
       text-decoration: none;
       border-bottom: 0.4rem solid #6295BF;
       cursor: pointer; }
+  .navbar__img {
+    height: 4.5rem; }
+    @media (max-width: 62.25em) {
+      .navbar__img {
+        display: block;
+        float: right; } }
+
+.navbar__img {
+  height: 4.5rem; }
 
 input[type="text"] {
   border: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-top: 0.8rem;
   outline: 0;
   padding: 0.4rem; }
@@ -607,7 +616,7 @@ input[type="text"] {
       font-size: 2.4rem; } }
   @media (max-width: 90em) {
     input[type="text"] {
-      font-size: 1.4rem; } }
+      font-size: 2rem; } }
 
 .dropdown {
   float: right; }
@@ -616,17 +625,17 @@ input[type="text"] {
     background-color: transparent;
     border: none;
     border-bottom: 0.4rem solid transparent;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
     outline: none;
-    padding: 1.2rem 0.8rem; }
+    padding: 1.2rem 1.8rem; }
     @media (max-width: 160em) {
       .dropdown-nav-link {
         font-size: 2.4rem; } }
     @media (max-width: 90em) {
       .dropdown-nav-link {
-        font-size: 1.4rem; } }
+        font-size: 2rem; } }
     .dropdown-nav-link:hover, .dropdown-nav-link::selection, .dropdown-nav-link:focus {
       color: #6295BF;
       border-bottom: 0.4rem solid #6295BF; }
@@ -634,18 +643,18 @@ input[type="text"] {
     background-color: rgba(196, 196, 196, 0.5); }
   .dropdown-item {
     background-color: rgba(196, 196, 196, 0.5);
-    font-size: 1.4rem;
+    font-size: 2rem;
     min-width: 16rem;
     display: block;
     text-align: left;
-    padding: 1.2rem 0.8rem;
+    padding: 1.2rem 1.8rem;
     border-bottom: 0.4rem solid transparent; }
     @media (max-width: 160em) {
       .dropdown-item {
         font-size: 2.4rem; } }
     @media (max-width: 90em) {
       .dropdown-item {
-        font-size: 1.4rem; } }
+        font-size: 2rem; } }
     .dropdown-item:hover {
       color: #6295BF;
       border-bottom: 0.4rem solid transparent; }
@@ -681,6 +690,102 @@ a {
       .pagination__item--word:hover {
         background-color: #fff;
         color: #38556e; }
+
+.fr {
+  color: #fff;
+  display: none;
+  float: right;
+  font-size: 4rem;
+  left: 96%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 3%;
+  transform: translateX(-50%); }
+  @media (max-width: 62.25em) {
+    .fr {
+      display: block; } }
+  @media (max-width: 50em) {
+    .fr {
+      font-size: 6rem;
+      left: 95%;
+      top: 1%; } }
+  @media (max-width: 30.625em) {
+    .fr {
+      left: 93%; } }
+  @media (max-width: 26.5em) {
+    .fr {
+      left: 92%; } }
+
+nav a, #search a {
+  color: #fff;
+  font-size: 5rem; }
+
+/* Full screen search*/
+#search {
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  background: rgba(0, 0, 0, 0.975);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .5s;
+  will-change: transform, opacity;
+  z-index: -1; }
+
+#searchbox {
+  height: 2rem;
+  max-width: 50%;
+  background: transparent;
+  border-width: 0 0 1px 0;
+  border-style: solid #fff;
+  color: #fff;
+  flex: 1 0 auto;
+  font-size: 4rem;
+  outline: 0;
+  padding: 2rem 1rem; }
+  @media (max-width: 44.6875em) {
+    #searchbox {
+      max-width: 80%; } }
+
+#close-btn {
+  font-size: 6rem;
+  position: absolute;
+  right: 5%;
+  top: 5%; }
+
+#search:target {
+  height: 100vh !important;
+  width: 100vw !important;
+  opacity: 1;
+  z-index: 2; }
+
+/* other directions */
+#search.bottom {
+  bottom: 0; }
+
+#search.left {
+  left: 0;
+  height: 100vh;
+  width: 0; }
+
+#search.right {
+  height: 100vh;
+  width: 0;
+  right: 0; }
+
+#search.bottom.left, #search.bottom.right, #search.top.left, #search.top.right {
+  height: 0; }
+
+#search.fade {
+  height: 100vw;
+  width: 100vw;
+  transition: opacity .5s; }
+
+a:hover, a:focus {
+  color: #fff;
+  text-decoration: underline; }
 
 .top-text {
   position: relative; }
@@ -1143,9 +1248,9 @@ a {
 
 #menu-wrapper #hamburger-menu {
   position: relative;
-  width: 25px;
+  width: 40px;
   height: 20px;
-  margin: 15px; }
+  margin: 20px; }
 
 #menu-wrapper #hamburger-menu span {
   opacity: 1;
@@ -1164,13 +1269,13 @@ a {
   transition: .4s ease-in-out; }
 
 #menu-wrapper #hamburger-menu span:nth-child(1) {
-  top: 0; }
+  top: -4px; }
 
 #menu-wrapper #hamburger-menu span:nth-child(2) {
   top: 9px; }
 
 #menu-wrapper #hamburger-menu span:nth-child(3) {
-  top: 18px; }
+  top: 22px; }
 
 #menu-wrapper #hamburger-menu.open span:nth-child(1) {
   top: 9px;
@@ -1230,7 +1335,7 @@ a {
   top: 50%;
   right: 30px;
   width: 15px;
-  height: 2px;
+  height: 4px;
   margin-top: -1px;
   background-color: #5a5858;
   -webkit-transform-origin: 50% 50%;

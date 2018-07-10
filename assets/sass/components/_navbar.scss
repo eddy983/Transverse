@@ -87,6 +87,19 @@
       cursor: pointer;
     }
   }
+
+  &__img {
+    height: 4.5rem;
+
+    @include respond(tab-land2) { 
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.navbar__img {
+  height: 4.5rem;
 }
 
 input[type="text"] {

@@ -1,10 +1,8 @@
-.facebook {
-  &__board {
-    background-image: url(../../assets/img/Card-image2.jpg);
-    border-radius: 0.7rem;
-    height: 16rem;
-    background-size: 100% 100%;
-    object-fit: contain;
-    width: 28rem;
+.fb_iframe_widget {
+ // position: fixed;
+  z-index: 2;
+
+  @include respond(tab-port2) {
+    display: none;
   }
 }

@@ -6,8 +6,12 @@
       margin-top: 26rem;
     }
 
-    @include respond(phone) { 
+    @include respond(l-phone) { 
       margin-top: 24rem;
+    }
+
+    @include respond(phone) { 
+      margin-top: 18rem;
     }
 
     @include respond(m-phone-m) { 
@@ -15,7 +19,7 @@
     }
 
     @include respond(m-phone2) { 
-      margin-top: 14rem;
+      margin-top: 12rem;
     }
 
     @include respond(sx-phone) { 

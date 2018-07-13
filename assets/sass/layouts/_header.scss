@@ -1,5 +1,5 @@
 .header{
-  height: 62vh;
+  height: 70vh;
   background-image: url(../../assets/img/BG-image.jpg);
   background-size: cover;
   background-position: top;
@@ -9,16 +9,25 @@
     height: 50vh;
   }
 
-  @include respond(tab) {
-    height: 36vh;
+  @include respond(tab-port2) {
+    height: 50vh;
   }
 
+  @include respond(tab) {
+    height: 48vh;
+  }
+
+  @include respond(phone) {
+    //height: 40vh;
+  }
+  
+
   @include respond(phone2) {
-    height: 25vh;
+    height: 42vh;
   }
 
   @include respond(m-phone-m) { 
-    height: 48rem;
+    height: 44rem;
   }
 
   @include respond(s-phone2) { 
@@ -26,7 +35,7 @@
   }
 
   @include respond(sx-phone) {
-    height: 20vh;
+    height: 30vh;
   }
 
   
@@ -85,7 +94,7 @@
 
     &--image {
       border-radius: 4px;
-      height: 44rem;
+      height: 38rem;
       left: 50%;
       position: absolute;
       top: 50%;
@@ -123,11 +132,17 @@
       }
 
       @include respond(m-phone-m) { 
-        height: 36rem;
+        height: 30rem;
       }
 
-      @include respond(m-phone2) { 
+      @include respond(m-phone2) {
+        height: 29rem; 
         width: 48.4rem;
+      }
+
+      @include respond(m-phone4) { 
+        height: 28rem;
+        width: 44.4rem;
       }
 
       @include respond(s-phone2) { 

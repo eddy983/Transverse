@@ -97,7 +97,7 @@
             <a class="head" href="about.html">Submissions</a>
           </li>
           <li>
-            <a class="head" href="about.html">Privacy policy</a>
+            <a class="head" href="privacy-policy.html">Privacy policy</a>
           </li>
         </ul>
         <!-- menu-submenu accordon-content-->
@@ -427,13 +427,14 @@
 
     <!-- Pagination -->
     <div class="u-text-center">
-      <div class="pagination">
-        <a href="#" class="pagination__item pagination__item--word pagination-font">Prev page</a>
-        <a href="#" class="pagination__item pagination-font">1</a>
-        <a href="#" class="pagination__item pagination-font">2</a>
-        <a href="#" class="pagination__item pagination-font">3</a>
-        <a href="#" class="pagination__item pagination-font">4</a>
-        <a href="#" class="pagination__item pagination__item--word pagination-font">Next page</a>
+      <div class="pagination" id="myDIV">
+        <button class="pagination__item pagination__item--word pagination-font">Prev page</button>
+        <button class="btns pagination__item pagination-font">1</button>
+        <button class="btns actives pagination__item pagination-font">2</button>
+        <button class="btns pagination__item pagination-font">3</button>
+        <button class="btns pagination__item pagination-font">4</button>
+        <button class="btns pagination__item pagination-font">5</button>
+        <button class="pagination__item pagination__item--word pagination-font">Next page</button>
       </div>
     </div>
 
@@ -546,7 +547,18 @@
     <h4 class="lt">loading</h4>
   </div>
 
-
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btns");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("actives");
+        current[0].className = current[0].className.replace(" actives", "");
+        this.className += " actives";
+      });
+    }
+  </script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

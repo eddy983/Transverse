@@ -171,7 +171,7 @@
   }
 
   &__social-media {
-    margin-top: 4.2rem;
+    margin-top: 3rem;
 
     @include respond(l-phone) { 
       float: right;
@@ -184,7 +184,7 @@
     }
 
     @include respond(m-phone-m) { 
-      margin-top: 1rem;
+      margin-top: 3rem;
       width: 100%;
     }
 

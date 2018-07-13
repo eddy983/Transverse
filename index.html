@@ -103,7 +103,7 @@
             <a class="head" href="about.html">Submissions</a>
           </li>
           <li>
-            <a class="head" href="about.html">Privacy policy</a>
+            <a class="head" href="privacy-policy.html">Privacy policy</a>
           </li>
         </ul>
         <!-- menu-submenu accordon-content-->
@@ -125,7 +125,7 @@
     </a>
 
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <nav class="navbar">
       <div class="navbar__items">
         <div class="navbar__search-container">
           <form action="/action_page.php">
@@ -135,7 +135,7 @@
             </button>
           </form>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" id="nav">
           <button class="dropbtn dropdown-nav-link" onclick="myFunction3()">About
             <i class="fa fa-caret-down"></i>
           </button>
@@ -166,14 +166,16 @@
             <a href="interviews.html" class="dropdown-item">Interviews</a>
           </div>
         </div>
-        <a href="opinions.html" class="navbar__item">Opinions</a>
-        <a href="news.html" class="navbar__item">News</a>
-        <a href="index.html" class="navbar__item">Home</a>
+        <div id="nav">
+          <a href="opinions.html" class="navbar__item">Opinions</a>
+          <a href="news.html" class="navbar__item">News</a>
+          <a href="index.html" class="navbar__item">Home</a>
+        </div>
         <div class="navbar__shape">
           <img src="assets/img/T.png" alt="Logo" class="navbar__img">
         </div>
       </div>
-    </div>
+    </nav>
 
     <!-- Heading -->
     <div class="header__text-box">
@@ -184,6 +186,13 @@
     </div>
   </header>
 
+  <div class="fb-page" style="position: fixed;" data-href="https://www.facebook.com/thetransverse/" data-width="300" data-small-header="false"
+    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/thetransverse/" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/thetransverse/">The Transverse</a>
+    </blockquote>
+  </div>
+
   <section class="news">
 
     <section class="section__trending">
@@ -191,7 +200,6 @@
       <div class="row">
         <h2 class="u-margin-paragraph-big news-title">Trending</h2>
       </div>
-
 
       <!-- Carousel Card -->
       <div class="carousel">
@@ -1224,6 +1232,17 @@
     </div>
 
   </footer>
+
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=613375755679213&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

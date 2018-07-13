@@ -179,6 +179,8 @@ body {
 .paragraph {
   font-size: 1.6rem;
   font-weight: 400; }
+  .paragraph__news {
+    font-size: 1.8rem; }
   .paragraph-medium {
     font-weight: 500; }
   .paragraph-bold {
@@ -196,6 +198,9 @@ body {
 .pagination-font {
   font-size: 1.4rem;
   font-weight: 600; }
+  @media (max-width: 56.25em) {
+    .pagination-font {
+      font-size: 2.2rem; } }
 
 .footer-title {
   color: rgba(0, 0, 0, 0.5);
@@ -479,13 +484,11 @@ body {
   height: 3.3rem;
   width: 3.3rem; }
 
-.facebook__board {
-  background-image: url(../../assets/img/Card-image2.jpg);
-  border-radius: 0.7rem;
-  height: 16rem;
-  background-size: 100% 100%;
-  object-fit: contain;
-  width: 28rem; }
+.fb_iframe_widget {
+  z-index: 2; }
+  @media (max-width: 62.25em) {
+    .fb_iframe_widget {
+      display: none; } }
 
 /** page **/
 .cssloader {
@@ -679,21 +682,33 @@ a {
   display: inline-block;
   padding: 8rem 0 4rem 0; }
   .pagination__item {
+    background-color: white;
+    border: none;
     color: #FF0000;
     float: left;
+    outline: 0;
     padding: 1rem 1.6rem;
     text-decoration: none; }
     .pagination__item:active, .pagination__item:hover, .pagination__item::selection {
       background-color: #38556e;
       color: #fff;
-      border-radius: .8rem; }
+      border-radius: 0.8rem; }
     .pagination__item--word {
       color: #FF0000;
       margin: 1rem 1.2rem;
       padding: 0; }
+      .pagination__item--word:focus {
+        outline: 0; }
       .pagination__item--word:hover {
         background-color: #fff;
         color: #38556e; }
+
+.actives {
+  background-color: #38556e;
+  border-radius: 0.8rem;
+  color: #fff; }
+  .actives:focus {
+    outline: 0; }
 
 .fr {
   color: #c3bcbcfc;
@@ -933,7 +948,7 @@ a:hover, a:focus {
       .footer__email__input {
         width: 90%; } }
   .footer__social-media {
-    margin-top: 4.2rem; }
+    margin-top: 3rem; }
     @media (max-width: 41.125em) {
       .footer__social-media {
         float: right;
@@ -944,7 +959,7 @@ a:hover, a:focus {
         margin-top: -17.8rem; } }
     @media (max-width: 30.625em) {
       .footer__social-media {
-        margin-top: 1rem;
+        margin-top: 3rem;
         width: 100%; } }
     .footer__social-media__icon {
       height: 3.2rem;
@@ -1039,6 +1054,69 @@ a:hover, a:focus {
   .row .col-2-of-4 {
     width: calc( 2 * ((100% - 3 * 3rem) / 4) + 3rem); }
   .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
+
+.row-n {
+  max-width: 144rem;
+  margin: 0 6.7rem; }
+  @media (max-width: 160em) {
+    .row-n {
+      margin: 0 44.7rem; } }
+  @media (max-width: 138.5625em) {
+    .row-n {
+      margin: 0 38.7rem; } }
+  @media (max-width: 90em) {
+    .row-n {
+      margin: 0 6.7rem; } }
+  @media (max-width: 41.125em) {
+    .row-n {
+      margin: 0 6.7rem; } }
+  @media (max-width: 26.5em) {
+    .row-n {
+      margin: 0 5.7rem; } }
+  @media (max-width: 23.4375em) {
+    .row-n {
+      margin: 0 4.7rem; } }
+  @media (max-width: 20.6875em) {
+    .row-n {
+      margin: 0 2rem; } }
+  .row-n:not(:last-child) {
+    margin-bottom: 0; }
+  .row-n::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row-n [class^="col-"] {
+    float: left; }
+    .row-n [class^="col-"]:not(:last-child) {
+      margin-right: 3rem; }
+      @media (max-width: 41.125em) {
+        .row-n [class^="col-"]:not(:last-child) {
+          margin-right: 2rem; } }
+  .row-n .col-1-of-2 {
+    width: calc((100% - 3rem) / 2); }
+  .row-n .col-1-of-3 {
+    width: calc((100% - 2 * 3rem) / 3); }
+  .row-n .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 3rem) / 3) + 3rem); }
+  .row-n .col-1-of-4 {
+    width: calc((100% - 3 * 3rem) / 4); }
+    @media (max-width: 41.125em) {
+      .row-n .col-1-of-4 {
+        width: 95%; } }
+  .row-n .col-1-of-4-n {
+    width: calc((100% - 3 * 3rem) / 4); }
+    @media (max-width: 41.125em) {
+      .row-n .col-1-of-4-n {
+        width: calc((76% - 2 * 3rem) / 3); } }
+  .row-n .col-1-of-4-d {
+    width: calc((100% - 3 * 3rem) / 4); }
+    @media (max-width: 41.125em) {
+      .row-n .col-1-of-4-d {
+        display: none; } }
+  .row-n .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 3rem) / 4) + 3rem); }
+  .row-n .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
 
 .row-i {
@@ -1144,7 +1222,7 @@ a:hover, a:focus {
     width: calc( 3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
 
 .header {
-  height: 62vh;
+  height: 70vh;
   background-image: url(../../assets/img/BG-image.jpg);
   background-size: cover;
   background-position: top;
@@ -1152,18 +1230,21 @@ a:hover, a:focus {
   @media (max-width: 62.25em) {
     .header {
       height: 50vh; } }
+  @media (max-width: 62.25em) {
+    .header {
+      height: 50vh; } }
   @media (max-width: 44.6875em) {
     .header {
-      height: 36vh; } }
+      height: 48vh; } }
   @media (max-width: 34.5625em) {
     .header {
-      height: 25vh; } }
+      height: 42vh; } }
   @media (max-width: 30.625em) {
     .header {
-      height: 48rem; } }
+      height: 44rem; } }
   @media (max-width: 20em) {
     .header {
-      height: 20vh; } }
+      height: 30vh; } }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -1199,7 +1280,7 @@ a:hover, a:focus {
         margin: 2rem auto 0 auto; } }
     .header__news--image {
       border-radius: 4px;
-      height: 44rem;
+      height: 38rem;
       left: 50%;
       position: absolute;
       top: 50%;
@@ -1231,10 +1312,15 @@ a:hover, a:focus {
           width: 54.4rem; } }
       @media (max-width: 30.625em) {
         .header__news--image {
-          height: 36rem; } }
+          height: 30rem; } }
       @media (max-width: 26.5em) {
         .header__news--image {
+          height: 29rem;
           width: 48.4rem; } }
+      @media (max-width: 23.4375em) {
+        .header__news--image {
+          height: 28rem;
+          width: 44.4rem; } }
       @media (max-width: 20em) {
         .header__news--image {
           height: 20rem;
@@ -1541,15 +1627,18 @@ a {
   @media (max-width: 44.6875em) {
     .news__text {
       margin-top: 26rem; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 41.125em) {
     .news__text {
       margin-top: 24rem; } }
+  @media (max-width: 37.5em) {
+    .news__text {
+      margin-top: 18rem; } }
   @media (max-width: 30.625em) {
     .news__text {
       margin-top: 18rem; } }
   @media (max-width: 26.5em) {
     .news__text {
-      margin-top: 14rem; } }
+      margin-top: 12rem; } }
   @media (max-width: 20em) {
     .news__text {
       margin-top: 11rem; } }

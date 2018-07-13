@@ -118,6 +118,22 @@ input[type="text"] {
     }
 }
 
+input[type="texts"] {
+  border: none;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 0.4rem;
+
+  @include respond(big-desktop) { 
+    font-size: 2rem;
+  }
+
+  @include respond(desktop) { 
+    font-size: 1.6rem; 
+    }
+}
+
 .dropdown {
   float: right;
   &-nav-link {

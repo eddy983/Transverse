@@ -8,7 +8,7 @@
     color: $red-color;
     float: left;
     outline: 0;
-    padding: 1rem 1.6rem;
+    padding: 1rem 1.6rem;  
     text-decoration: none;
 
     &:active,
@@ -45,13 +45,3 @@
   }
 }
 
-// .pagination a.active {
-//   background-color: #4caf50;
-//   color: white;
-//   border-radius: 5px;
-// }
-
-// .pagination a:hover:not(.active) {
-//   background-color: #ddd;
-//   border-radius: 5px;
-// }

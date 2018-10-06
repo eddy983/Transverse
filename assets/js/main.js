@@ -1,13 +1,22 @@
-//this is only for demonstration of different fly-in directions
-
-var changeClass = function(name){
-  $('#search').removeAttr('class').addClass(name);
-}
-
+// Loader Js
 window.onbeforeunload = e => {
   console.log("switching");
   document.getElementsByClassName("cssloader")[0].style.display = "block";
 };
+
+
+
+
+
+// Responsive Search JS
+
+//this is only for demonstration of different fly-in directions
+var changeClass = function(name) {
+  $("#search")
+    .removeAttr("class")
+    .addClass(name);
+};
+
 
 
 //Responsive Navigation Bar
@@ -53,6 +62,19 @@ $(function() {
         .removeClass("active");
     });
 }); // jQuery load
+
+// Pagination Js
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("actives");
+    current[0].className = current[0].className.replace(" actives", "");
+    this.className += " actives";
+  });
+}
 
 /* Responsive Search Bar */
 function expand() {
@@ -213,3 +235,8 @@ $(function() {
         .removeClass("active");
     });
 }); // jQuery load
+
+
+
+
+

@@ -36,19 +36,7 @@ html {
   @include respond(tab) { // width < 715?
     font-size: 36%; //1 rem = 8px,  8/16 = 50%
   }
-
-  // @include respond(l-phone) { 
-  //   font-size: 40%; 
-  // }
-
-  // @include respond(phone2) { 
-  //   font-size: 32%; 
-  // }
-
-  // @include respond(sx-phone) { 
-  //   font-size: 28%; 
-  // }
-
+  
 }
 
 body {

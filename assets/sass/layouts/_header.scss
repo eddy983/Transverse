@@ -6,7 +6,7 @@
   position: relative;
 
   @include respond(tab-port2) {
-    height: 50vh;
+    height: 50vh; 
   }
 
   @include respond(tab-port2) {
@@ -16,12 +16,7 @@
   @include respond(tab) {
     height: 48vh;
   }
-
-  @include respond(phone) {
-    //height: 40vh;
-  }
   
-
   @include respond(phone2) {
     height: 42vh;
   }

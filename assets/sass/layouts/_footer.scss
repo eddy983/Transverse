@@ -1,66 +1,15 @@
 .footer {
   background-color: #c4c4c4;
-  height: 70vh;
   margin-top: 4rem;
-
-  @include respond(big-desktop) { 
-    height: 57vh;  
-  }
-
-  @include respond(desktop) { 
-    height: 61vh;  
-  }
-
-  @include respond(tab-land) {
-    height: 51vh;
-  }
-
-  @include respond(tab-land2) {
-    height: 27vh;
-  }
-
-  @include respond(tab-port2) {
-    height: 39vh;
-  }
+  padding-bottom: 1%; 
 
   @include respond(tab-port) {
-    height: 32vh;
-  }
-
-  @include respond(tab-port3) {
-    height: 25vh;
+    padding-bottom: 2%; 
   }
 
   @include respond(l-phone) {
-    height: 104vh;
     margin-top: 8rem;
   }
-
-  @include respond(phone) {
-    height: 73vh;
-  }
-
-  @include respond(phone2) {
-    height: 88vh;
-  }
-
-  @include respond(m-phone2) {
-    height: 95vh;
-  }
-
-  @include respond(m-phone4) {
-    height: 112vh;
-  }
-
-  @include respond(s-phone2) {
-    height: 101vh;
-  }
-
-  @include respond(sx-phone) {
-    height: 140vh;
-  }
-
-  
 
   &__items {
     padding: 4rem 6.7rem;
@@ -78,7 +27,7 @@
     }
 
     @include respond(l-phone) { 
-      padding: 2rem 3.7rem;
+      padding: 2rem 3.7rem;     
     }
   }
 

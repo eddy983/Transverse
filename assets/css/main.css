@@ -486,7 +486,7 @@ body {
 
 .fb_iframe_widget {
   z-index: 2; }
-  @media (max-width: 62.25em) {
+  @media (max-width: 56.25em) {
     .fb_iframe_widget {
       display: none; } }
 
@@ -845,48 +845,14 @@ a:hover, a:focus {
 
 .footer {
   background-color: #c4c4c4;
-  height: 70vh;
-  margin-top: 4rem; }
-  @media (max-width: 160em) {
-    .footer {
-      height: 57vh; } }
-  @media (max-width: 90em) {
-    .footer {
-      height: 61vh; } }
-  @media (max-width: 80em) {
-    .footer {
-      height: 51vh; } }
-  @media (max-width: 62.25em) {
-    .footer {
-      height: 27vh; } }
-  @media (max-width: 62.25em) {
-    .footer {
-      height: 39vh; } }
+  margin-top: 4rem;
+  padding-bottom: 1%; }
   @media (max-width: 56.25em) {
     .footer {
-      height: 32vh; } }
-  @media (max-width: 50em) {
-    .footer {
-      height: 25vh; } }
+      padding-bottom: 2%; } }
   @media (max-width: 41.125em) {
     .footer {
-      height: 104vh;
       margin-top: 8rem; } }
-  @media (max-width: 37.5em) {
-    .footer {
-      height: 73vh; } }
-  @media (max-width: 34.5625em) {
-    .footer {
-      height: 88vh; } }
-  @media (max-width: 26.5em) {
-    .footer {
-      height: 95vh; } }
-  @media (max-width: 23.4375em) {
-    .footer {
-      height: 112vh; } }
-  @media (max-width: 20em) {
-    .footer {
-      height: 140vh; } }
   .footer__items {
     padding: 4rem 6.7rem; }
     @media (max-width: 160em) {
@@ -1174,7 +1140,9 @@ a:hover, a:focus {
     width: calc((100% - 3 * 3rem) / 4); }
     @media (max-width: 41.125em) {
       .row-i .col-1-of-4 {
-        width: 95%; } }
+        width: 95%; }
+        .row-i .col-1-of-4:not(:last-child) {
+          display: none; } }
   .row-i .col-1-of-4-d {
     width: calc((100% - 3 * 3rem) / 4); }
     @media (max-width: 41.125em) {
@@ -1733,6 +1701,12 @@ a {
     margin-bottom: 4rem;
     padding: 2rem;
     width: 66%; }
+
+.news__display {
+  display: block; }
+  @media (max-width: 41.125em) {
+    .news__display {
+      display: none; } }
 
 .privacy-policy__card {
   margin-bottom: 4rem;

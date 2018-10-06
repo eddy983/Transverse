@@ -14,7 +14,7 @@
     &:active,
     &:hover,
     &::selection {
-      background-color: $dark-blue-color;
+      background-color: $dark-blue-color; 
       color: $white-color;
       border-radius: 0.8rem;
     }

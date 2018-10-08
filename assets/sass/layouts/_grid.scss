@@ -13,23 +13,23 @@
   }
 
   @include respond(desktop) { 
-    margin: 0 6.7rem 0 3.7rem;  
+    margin: 0 6.7rem 0 6.7rem;  
   }
   
   @include respond(l-phone) { 
-    margin: 0 1.7rem 0 6.7rem;  
+    margin: 0 1.7rem 0 0.7rem;  
   }
 
   @include respond(m-phone2) { 
-    margin: 0 2rem 0 5.7rem;  
+    margin: 0 2rem 0 0.7rem;  
   }
 
   @include respond(m-phone4) { 
-    margin: 0 1.6rem 0 4.7rem;  
+    margin: 0 2.6rem 0 0;  
   }
 
   @include respond(s-phone3) { 
-    margin: 0 2rem 0 4.7rem;  
+    margin: 0 2rem 0 0.7rem;   
   }
 
   &:not(:last-child) {

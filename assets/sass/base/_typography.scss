@@ -157,6 +157,10 @@ body {
   @include respond(tab-port) {
     font-size: 2.2rem;
   }
+
+  @include respond(l-phone) {
+    font-size: 3.2rem;  
+  }
 }
 
 .footer-title {

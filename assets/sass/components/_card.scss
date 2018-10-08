@@ -9,7 +9,19 @@
     perspective: 150rem;
 
     @include respond(l-phone) {
-      height: 28.9rem;
+      height: 32.9rem; 
+    }
+
+    @include respond(phone) {
+      height: 28.9rem;    
+    }
+
+    @include respond(m-phone-m) { 
+      height: 32.9rem;    
+    }
+
+    @include respond(m-phone2) {  
+      height: 27.9rem;    
     }
 
     &--2 {
